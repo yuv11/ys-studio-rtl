@@ -178,7 +178,7 @@ const Hero = () => {
               <img 
                 src={courseMockup} 
                 alt="הקורס המקיף SiteMaster AI" 
-                className="rounded-2xl max-w-2xl w-full shadow-gradient-glow"
+                className="rounded-2xl max-w-xl w-full shadow-gradient-glow"
               />
             </div>
             
