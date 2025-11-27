@@ -82,11 +82,7 @@ const Hero = () => {
             
             {/* Image */}
             <div className="flex justify-center my-8">
-              <img 
-                src={codingPerson} 
-                alt="תכנות עם AI" 
-                className="rounded-2xl max-w-sm w-full shadow-gradient-glow"
-              />
+              <img src={codingPerson} alt="תכנות עם AI" className="rounded-2xl max-w-sm w-full shadow-gradient-glow" />
             </div>
             
             {/* Second Text Block */}
@@ -117,11 +113,7 @@ const Hero = () => {
             
             {/* Phones Image */}
             <div className="flex justify-center my-8">
-              <img 
-                src={phonesMockup} 
-                alt="דוגמאות אתרים בנייד" 
-                className="rounded-2xl max-w-2xl w-full shadow-gradient-glow"
-              />
+              <img src={phonesMockup} alt="דוגמאות אתרים בנייד" className="max-w-2xl w-full shadow-none rounded-none" />
             </div>
             
             {/* Third Text Block */}
@@ -149,11 +141,7 @@ const Hero = () => {
             
             {/* Woman Copywriter Image */}
             <div className="flex justify-center my-8">
-              <img 
-                src={womanCopywriter} 
-                alt="מאיה - קופירייטרית" 
-                className="rounded-2xl max-w-xl w-full shadow-gradient-glow"
-              />
+              <img src={womanCopywriter} alt="מאיה - קופירייטרית" className="rounded-2xl max-w-xl w-full shadow-gradient-glow" />
             </div>
             
             {/* Fourth Text Block */}
@@ -175,11 +163,7 @@ const Hero = () => {
             
             {/* Course Mockup Image */}
             <div className="flex justify-center my-8">
-              <img 
-                src={courseMockup} 
-                alt="הקורס המקיף SiteMaster AI" 
-                className="rounded-2xl max-w-xl w-full shadow-gradient-glow"
-              />
+              <img src={courseMockup} alt="הקורס המקיף SiteMaster AI" className="max-w-xl w-full border-0 rounded-none shadow-none" />
             </div>
             
             {/* CTA Button */}
