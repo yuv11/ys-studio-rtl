@@ -813,11 +813,7 @@ const Hero = () => {
               {/* Email Input with Premium Styling */}
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/30 blur-2xl rounded-2xl" />
-                <input 
-                  type="email" 
-                  placeholder="הכנס/י את המייל שלך" 
-                  className="relative w-full px-8 py-5 text-xl rounded-2xl border-4 border-white/30 bg-white/10 backdrop-blur-xl text-white placeholder:text-white/60 focus:outline-none focus:border-white/60 focus:bg-white/15 focus:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all duration-300 text-center font-semibold hover:border-white/50 hover:bg-white/12 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]" 
-                />
+                <input type="email" placeholder="הכנס/י את המייל שלך" className="relative w-full px-8 py-5 text-xl rounded-2xl border-4 border-white/30 bg-white/10 backdrop-blur-xl text-white placeholder:text-white/60 focus:outline-none focus:border-white/60 focus:bg-white/15 focus:shadow-[0_0_40px_rgba(255,255,255,0.3)] transition-all duration-300 text-center font-semibold hover:border-white/50 hover:bg-white/12 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)]" />
               </div>
               
               {/* Premium CTA Button */}
@@ -900,29 +896,36 @@ const Hero = () => {
 
               {/* Mid-section Headline */}
               <div className="max-w-3xl mx-auto text-center pt-8">
-                <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-                  תחשוב על זה רגע.
-                </h3>
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground">תחשוב על זה רגע.
+ איך ייראה העסק שלך כשהאתר שלך סוף־סוף ייראה:
+
+              </h3>
               </div>
 
               {/* Creative Mini-Card Grid */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
-                {[
-                  { icon: "✨", text: "מקצועי" },
-                  { icon: "🎨", text: "ממותג" },
-                  { icon: "✓", text: "נקי" },
-                  { icon: "🛡️", text: "אמין" },
-                  { icon: "💬", text: "מסביר מי אתה" },
-                  { icon: "🎯", text: "מוביל אנשים להשאיר פרטים או לקנות" }
-                ].map((feature, index) => (
-                  <div 
-                    key={index}
-                    className="group relative p-6 rounded-2xl bg-card/40 backdrop-blur border border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)] hover:-translate-y-1 text-center"
-                  >
+                {[{
+                icon: "✨",
+                text: "מקצועי"
+              }, {
+                icon: "🎨",
+                text: "ממותג"
+              }, {
+                icon: "✓",
+                text: "נקי"
+              }, {
+                icon: "🛡️",
+                text: "אמין"
+              }, {
+                icon: "💬",
+                text: "מסביר מי אתה"
+              }, {
+                icon: "🎯",
+                text: "מוביל אנשים להשאיר פרטים או לקנות"
+              }].map((feature, index) => <div key={index} className="group relative p-6 rounded-2xl bg-card/40 backdrop-blur border border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)] hover:-translate-y-1 text-center">
                     <div className="text-4xl mb-3">{feature.icon}</div>
                     <p className="text-lg font-semibold text-foreground">{feature.text}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
 
               {/* Reflection Questions */}
