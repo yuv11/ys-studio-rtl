@@ -1,6 +1,9 @@
 import { GradientButton } from "@/components/ui/gradient-button";
 import heroImage from "@/assets/hero-gradient.jpg";
 import codingPerson from "@/assets/coding-person.png";
+import phonesMockup from "@/assets/phones-mockup.png";
+import womanCopywriter from "@/assets/woman-copywriter.png";
+import courseMockup from "@/assets/course-mockup.png";
 import { toast } from "@/hooks/use-toast";
 const Hero = () => {
   const handleClick = () => {
@@ -110,6 +113,80 @@ const Hero = () => {
                 <br />
                 אתרים מקצועיים, נקיים, ממותגים.
               </p>
+            </div>
+            
+            {/* Phones Image */}
+            <div className="flex justify-center my-8">
+              <img 
+                src={phonesMockup} 
+                alt="דוגמאות אתרים בנייד" 
+                className="rounded-2xl max-w-3xl w-full shadow-gradient-glow"
+              />
+            </div>
+            
+            {/* Third Text Block */}
+            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
+              <p className="text-lg">
+                ובפעם הראשונה בחיי הרגשתי:
+                <br />
+                <strong className="text-foreground font-semibold">"רגע… זה כל כך קל. למה שלא כל בעל עסק יעשה את זה לבד?"</strong>
+              </p>
+              
+              <p className="text-lg">
+                אז התחלתי לבנות לעסקים אתרים עם AI.
+                <br />
+                אחד ועוד אחד.
+                <br />
+                ואנשים <strong className="text-foreground font-semibold">עפו</strong> על התוצאות.
+                <br />
+                לא כי אני גאון.
+                <br />
+                אלא כי AI פשוט מאפשר ליצור דברים מדהימים בזמן קצר.
+              </p>
+              
+              <p className="text-lg">וזה הרגע שבו הבנתי את האמת הכי גדולה:</p>
+            </div>
+            
+            {/* Woman Copywriter Image */}
+            <div className="flex justify-center my-8">
+              <img 
+                src={womanCopywriter} 
+                alt="מאיה - קופירייטרית" 
+                className="rounded-2xl max-w-2xl w-full shadow-gradient-glow border-2 border-border"
+              />
+            </div>
+            
+            {/* Fourth Text Block */}
+            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
+              <p className="text-lg">
+                <strong className="text-foreground font-semibold">וכל זה התחבר ל־SiteMaster AI -</strong>
+                <br />
+                שיטה שמאפשרת לכל בעל עסק לבנות אתר מעוצב, ממותג וממיר <strong className="text-foreground font-semibold">תוך שעתיים</strong>, בלי קוד ובלי שום ידע מוקדם בפיתוח, או עיצוב.
+              </p>
+              
+              <p className="text-lg">
+                זה לא קסם.
+                <br />
+                זה פשוט שימוש נכון ב-AI.
+              </p>
+              
+              <p className="text-lg">וזה מה שהקורס הזה בא לתת.</p>
+            </div>
+            
+            {/* Course Mockup Image */}
+            <div className="flex justify-center my-8">
+              <img 
+                src={courseMockup} 
+                alt="הקורס המקיף SiteMaster AI" 
+                className="rounded-2xl max-w-3xl w-full shadow-gradient-glow"
+              />
+            </div>
+            
+            {/* CTA Button */}
+            <div className="flex justify-center mt-12">
+              <GradientButton className="px-14" onClick={handleClick}>
+                אני בפנים!
+              </GradientButton>
             </div>
           </div>
         </div>
