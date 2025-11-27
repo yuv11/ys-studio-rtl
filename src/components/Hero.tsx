@@ -672,6 +672,160 @@ const Hero = () => {
               </p>
             </div>
           </div>
+          
+          {/* Pricing Section */}
+          <div className="max-w-4xl mx-auto mt-32 space-y-12 text-center" dir="rtl">
+            {/* Headline */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              הגיע הזמן לדבר על מחיר - וזה הולך להפתיע אותך
+            </h2>
+            
+            {/* Intro Text */}
+            <div className="space-y-4 text-xl md:text-2xl text-foreground/80">
+              <p className="font-semibold">בוא נתחיל מהאמת:</p>
+              <p>אם הייתי מתמחר את SiteMaster AI לפי הערך האמיתי שהוא נותן…</p>
+            </div>
+            
+            {/* First Dramatic Price */}
+            <div className="bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-lg border-2 border-border rounded-2xl p-8 md:p-12 space-y-6">
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+                💸 המחיר היה צריך להיות לפחות: 10,450 ₪
+              </p>
+              
+              {/* Breakdown */}
+              <ul className="space-y-3 text-right text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="text-right">בניית אתר מקצועי אצל בונה אתרים: 5,000–10,000 ₪</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="text-right">כתיבה שיווקית אצל קופירייטר: 800–2,000 ₪</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="text-right">מיתוג בסיסי: 1,000–3,000 ₪</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="text-right">תמיכה טכנית + חיבורים ואוטומציות: עוד 500–1,500 ₪</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <span className="text-right">והבונוסים לבד שווים 3,150 ₪</span>
+                </li>
+              </ul>
+              
+              <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto leading-relaxed pt-4">
+                ואתה מרוויח את היכולת ליצור כמה אתרים שתרצה בקלות, לכל מוצר או שירות שאי פעם יהיה לך, בלי תלות באף אחד
+              </p>
+            </div>
+            
+            {/* Divider */}
+            <div className="flex items-center gap-4 max-w-xl mx-auto my-12">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            </div>
+            
+            {/* First Price Drop */}
+            <div className="space-y-6">
+              <p className="text-2xl md:text-3xl font-bold text-foreground">
+                🤯 אבל מחיר ההשקה לא יכול להיות 10,450 ₪.
+              </p>
+              
+              <div className="text-lg md:text-xl text-foreground/80 space-y-3 max-w-2xl mx-auto">
+                <p className="font-semibold text-foreground">למה?</p>
+                <p>כי אני רוצה שבעלי עסקים יוכלו להיכנס לעולם בניית האתרים עם AI - בלי להירתע ובלי לפספס את ההזדמנות המטורפת הזאת.</p>
+                <p>אז הורדתי.</p>
+              </div>
+              
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
+                מחיר חדש: 7,500 ₪
+              </p>
+              
+              <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
+                אבל גם זה… עדיין גבוה מדי למי שרק מתחיל.
+              </p>
+            </div>
+            
+            {/* Divider */}
+            <div className="flex items-center gap-4 max-w-xl mx-auto my-12">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            </div>
+            
+            {/* Second Price Drop */}
+            <div className="space-y-6">
+              <p className="text-2xl md:text-3xl font-bold text-foreground">
+                😳 אז הורדתי שוב.
+              </p>
+              
+              <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
+                כי אני רוצה שתוכל להתחיל עכשיו, ולא 'כשיהיה כסף'. (וגם תכלס אין לי סיבה להיות גרידי…)
+              </p>
+              
+              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
+                מחיר השקה אחרון: 4,997 ₪
+              </p>
+              
+              <div className="text-lg md:text-xl text-foreground/80 space-y-3 max-w-2xl mx-auto">
+                <p>זה כבר מחיר שנראה לי די הגיוני ופייר.</p>
+                <p>אבל… ראיתי איזה שינוי זה עושה לעסקים.</p>
+                <p>ראיתי איך זה משנה אנשים.</p>
+                <p>ואני רוצה שזה יהיה נגיש לכולם, בלי שיחשבו בכלל על המחיר (וגם אם זה אומר לשבור את השוק!)</p>
+                <p className="font-semibold text-foreground">אז לקחתי החלטה:</p>
+              </div>
+            </div>
+            
+            {/* Divider */}
+            <div className="flex items-center gap-4 max-w-xl mx-auto my-12">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            </div>
+            
+            {/* Final Price Reveal */}
+            <div className="relative space-y-8">
+              <p className="text-2xl md:text-3xl font-bold text-foreground">
+                🚀 מחיר השקה מיוחד ומשוגע לגמרי: (לזמן מוגבל!)
+              </p>
+              
+              {/* Hero Price with Glow */}
+              <div className="relative inline-block mx-auto">
+                <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-full scale-150" />
+                <div className="relative bg-gradient-to-br from-primary/30 to-primary/10 backdrop-blur-xl border-4 border-primary rounded-3xl px-12 md:px-20 py-8 md:py-12 shadow-[0_0_80px_rgba(var(--primary-rgb),0.4)]">
+                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.6)]">
+                    297 ₪ בלבד
+                  </p>
+                </div>
+              </div>
+              
+              {/* Reassurance */}
+              <div className="space-y-2 text-xl md:text-2xl text-foreground/80 font-medium">
+                <p>ללא טריקים.</p>
+                <p>ללא תשלומים נסתרים.</p>
+                <p>ללא אותיות קטנות.</p>
+              </div>
+              
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground pt-4">
+                297 ₪ — ואתה יוצא עם אתר מקצועי שנראה מיליון דולר!
+              </p>
+            </div>
+            
+            {/* CTA Section */}
+            <div className="max-w-md mx-auto mt-16 space-y-6">
+              <input 
+                type="email" 
+                placeholder="הכנס/י את המייל שלך"
+                className="w-full px-6 py-4 text-lg rounded-xl border-2 border-border bg-card/50 backdrop-blur text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-center"
+              />
+              
+              <button className="group relative w-full px-8 py-5 text-xl font-bold text-primary-foreground rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] shadow-[0_0_40px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)]">
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-primary" />
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                {/* Button text */}
+                <span className="relative z-10">לרכישה ב97% הנחה</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>;
