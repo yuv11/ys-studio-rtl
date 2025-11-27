@@ -292,30 +292,30 @@ const Hero = () => {
                   </div>
                 </div>
                 
-                <ul className="space-y-4 text-lg text-foreground/90">
-                  <li className="flex items-start gap-3 justify-end">
-                    <span>איך לגרום ל־AI לכתוב עבורך קופי מקצועי וממיר</span>
+                <ul className="space-y-4 text-lg text-foreground/90" dir="rtl">
+                  <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span className="text-right">איך לגרום ל־AI לכתוב עבורך קופי מקצועי וממיר</span>
                   </li>
-                  <li className="flex items-start gap-3 justify-end">
-                    <span>איך לגרום ל־AI לבנות עבורך אתר שנראה כמו 10,000 ₪</span>
+                  <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span className="text-right">איך לגרום ל־AI לבנות עבורך אתר שנראה כמו 10,000 ₪</span>
                   </li>
-                  <li className="flex items-start gap-3 justify-end">
-                    <span>איך לבנות מותג ויזואלי ברור ומקצועי</span>
+                  <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span className="text-right">איך לבנות מותג ויזואלי ברור ומקצועי</span>
                   </li>
-                  <li className="flex items-start gap-3 justify-end">
-                    <span>איך למפות את האתר שלך בצורה נכונה כדי שיהיה ברור ויוביל אנשים לפעולה</span>
+                  <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span className="text-right">איך למפות את האתר שלך בצורה נכונה כדי שיהיה ברור ויוביל אנשים לפעולה</span>
                   </li>
-                  <li className="flex items-start gap-3 justify-end">
-                    <span>איך לייצר בקלות ובמהירות אתרים איכותיים תוך שעות</span>
+                  <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span className="text-right">איך לייצר בקלות ובמהירות אתרים איכותיים תוך שעות</span>
                   </li>
-                  <li className="flex items-start gap-3 justify-end">
-                    <span>איך להעלות את האתר שלך לאוויר ולשלוט בו בעצמך בקלות</span>
+                  <li className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span className="text-right">איך להעלות את האתר שלך לאוויר ולשלוט בו בעצמך בקלות</span>
                   </li>
                 </ul>
               </CardContent>
