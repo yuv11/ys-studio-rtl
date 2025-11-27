@@ -11,6 +11,7 @@ import codingPerson from "@/assets/coding-person.png";
 import phonesMockup from "@/assets/phones-mockup.png";
 import womanCopywriter from "@/assets/woman-copywriter.png";
 import courseMockup from "@/assets/course-mockup.png";
+import websiteResult from "@/assets/website-result.png";
 import { toast } from "@/hooks/use-toast";
 import { DollarSign, Settings, RefreshCw, Target, Award } from "lucide-react";
 const Hero = () => {
@@ -553,6 +554,28 @@ const Hero = () => {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+          
+          {/* Final Result Section */}
+          <div className="max-w-4xl mx-auto mt-24 space-y-12 text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              בסוף התהליך - יש לך אתר מקצועי אמיתי. כזה שמביא לקוחות.
+            </h2>
+            
+            <div className="space-y-3 text-xl md:text-2xl text-foreground/80">
+              <p>לא אתר 'נחמד'.</p>
+              <p>לא אתר 'בסדר'.</p>
+              <p>לא אתר שאתה מתבייש לשלוח לאנשים.</p>
+              <p className="font-semibold text-foreground">אלא אתר שנראה כאילו עלה 10,000 ₪ לבנות!</p>
+            </div>
+            
+            <div className="w-full mt-12">
+              <img 
+                src={websiteResult} 
+                alt="תוצאה סופית - אתרים מקצועיים על מכשירים שונים" 
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
