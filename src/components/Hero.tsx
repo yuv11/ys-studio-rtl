@@ -813,11 +813,7 @@ const Hero = () => {
               {/* Email Input with Premium Styling */}
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 blur-xl rounded-2xl" />
-                <input 
-                  type="email" 
-                  placeholder="הכנס/י את המייל שלך"
-                  className="relative w-full px-8 py-5 text-xl rounded-2xl border-3 border-primary/40 bg-card/80 backdrop-blur-xl text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-primary focus:shadow-[0_0_30px_rgba(var(--primary-rgb),0.4)] transition-all duration-300 text-center font-medium hover:border-primary/60"
-                />
+                <input type="email" placeholder="הכנס/י את המייל שלך" className="relative w-full px-8 py-5 text-xl rounded-2xl border-3 border-primary/40 bg-card/80 backdrop-blur-xl text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-primary focus:shadow-[0_0_30px_rgba(var(--primary-rgb),0.4)] transition-all duration-300 text-center font-medium hover:border-primary/60" />
               </div>
               
               {/* Premium CTA Button */}
@@ -851,7 +847,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-primary">✓</span>
-                  <span>ללא התחייבות</span>
+                  <span>​גישה לכל החיים    </span>
                 </div>
               </div>
             </div>
