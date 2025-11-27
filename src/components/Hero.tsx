@@ -1,10 +1,12 @@
 import { GradientButton } from "@/components/ui/gradient-button";
+import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-gradient.jpg";
 import codingPerson from "@/assets/coding-person.png";
 import phonesMockup from "@/assets/phones-mockup.png";
 import womanCopywriter from "@/assets/woman-copywriter.png";
 import courseMockup from "@/assets/course-mockup.png";
 import { toast } from "@/hooks/use-toast";
+import { DollarSign, Settings, RefreshCw, Target, Award } from "lucide-react";
 const Hero = () => {
   const handleClick = () => {
     toast({
@@ -44,8 +46,107 @@ const Hero = () => {
             </GradientButton>
           </div>
           
+          {/* Pain Points Section */}
+          <div className="max-w-5xl mx-auto mt-24 space-y-12">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                "אני חייב אתר שנראה מקצועי כדי להביא יותר לקוחות - אבל אין לי כסף, זמן או יכולת לבנות אחד."
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                ולצד זה מגיעים עוד כאבים שמלווים כמעט כל בעל עסק:
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Card 1 */}
+              <Card className="bg-card/50 backdrop-blur border-border hover:shadow-gradient-glow transition-all duration-300 hover:scale-[1.02]">
+                <CardContent className="p-6 space-y-4 text-right">
+                  <div className="flex justify-end">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <DollarSign className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    "אני לא הולך לשלם עוד 5,000–10,000 ₪ על אתר."
+                  </h3>
+                  <p className="text-muted-foreground">
+                    במיוחד כשאין שום הבטחה שהוא באמת יעבוד.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 2 */}
+              <Card className="bg-card/50 backdrop-blur border-border hover:shadow-gradient-glow transition-all duration-300 hover:scale-[1.02]">
+                <CardContent className="p-6 space-y-4 text-right">
+                  <div className="flex justify-end">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Settings className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    "טכנולוגיה זה לא בשבילי."
+                  </h3>
+                  <p className="text-muted-foreground">
+                    וורדפרס, תוספים, עיצובים, הגדרות, דומיין… מרגיש כמו שפה זרה.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 3 */}
+              <Card className="bg-card/50 backdrop-blur border-border hover:shadow-gradient-glow transition-all duration-300 hover:scale-[1.02]">
+                <CardContent className="p-6 space-y-4 text-right">
+                  <div className="flex justify-end">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <RefreshCw className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    "גם אם אקבל אתר – אני ארצה לעדכן אותו."
+                  </h3>
+                  <p className="text-muted-foreground">
+                    לבקש מעצב לשנות כפתור כל פעם? יקר ומתסכל.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 4 */}
+              <Card className="bg-card/50 backdrop-blur border-border hover:shadow-gradient-glow transition-all duration-300 hover:scale-[1.02]">
+                <CardContent className="p-6 space-y-4 text-right">
+                  <div className="flex justify-end">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Target className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    "אני צריך אתר שמביא לקוחות – לא סתם אתר יפה."
+                  </h3>
+                  <p className="text-muted-foreground">
+                    רוב האתרים נראים בסדר… אבל לא מוכרים.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 5 */}
+              <Card className="bg-card/50 backdrop-blur border-border hover:shadow-gradient-glow transition-all duration-300 hover:scale-[1.02]">
+                <CardContent className="p-6 space-y-4 text-right">
+                  <div className="flex justify-end">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                      <Award className="w-6 h-6 text-primary" />
+                    </div>
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    "אני רוצה להיראות כמו עסק אמיתי, לא חלטורה."
+                  </h3>
+                  <p className="text-muted-foreground">
+                    היום לקוח נותן מבט אחד באתר ומחליט אם אתה מקצוען או לא.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          
           {/* Story Section */}
-          <div className="max-w-3xl mx-auto mt-16 space-y-8">
+          <div className="max-w-3xl mx-auto mt-24 space-y-8">
             {/* First Text Block */}
             <div className="text-right space-y-4 text-foreground/90 leading-relaxed mt-[84px]">
               <p className="text-lg my-0">כשהתחלתי את הדרך שלי,</p>
