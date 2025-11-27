@@ -1,5 +1,6 @@
 import { GradientButton } from "@/components/ui/gradient-button";
 import heroImage from "@/assets/hero-gradient.jpg";
+import codingPerson from "@/assets/coding-person.png";
 import { toast } from "@/hooks/use-toast";
 const Hero = () => {
   const handleClick = () => {
@@ -38,7 +39,78 @@ const Hero = () => {
             <GradientButton className="px-14" onClick={handleClick}>
               ​אני חייב כזה גם בעסק שלי!                
             </GradientButton>
+          </div>
+          
+          {/* Story Section */}
+          <div className="max-w-3xl mx-auto mt-16 space-y-8">
+            {/* First Text Block */}
+            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
+              <p className="text-lg">כשהתחלתי את הדרך שלי,</p>
+              
+              <p className="text-lg">
+                רציתי להיות <strong className="text-foreground font-semibold">בונה דפי נחיתה לעסקים</strong>.
+                <br />
+                חשבתי שזה מקצוע שמאפשר לי לעזור, ליצור, לבנות - וגם להרוויח.
+              </p>
+              
+              <p className="text-lg">אבל מהר מאוד גיליתי את המציאות:</p>
+              
+              <ul className="text-lg space-y-2 mr-6">
+                <li>וורדפרס היה <em className="text-foreground/80">סיוט</em> לעבוד איתו.</li>
+                <li>בניית אתר טוב יכלה לקחת <strong className="text-foreground font-semibold">שבועות</strong>.</li>
+                <li>בעלי עסקים שילמו <strong className="text-foreground font-semibold">אלפי שקלים</strong> על אתרים בסיסיים.</li>
+                <li>וכל פעם שמישהו רצה שינוי באתר זה יצר המון כאב ראש.</li>
+              </ul>
+              
+              <p className="text-lg">
+                ובאיזשהו שלב… שאלתי את עצמי:
+                <br />
+                <strong className="text-foreground font-semibold">"אם רק בעלי העסקים היו יכולים לבנות אתר בעצמם בקלות… זה היה משנה את כל התמונה!"</strong>
+              </p>
+              
+              <p className="text-lg">
+                באותו זמן התחלתי להתעניין עמוק בעולם ה-AI.
+                <br />
+                חקרתי, ניסיתי כלים, בדקתי מה אפשר לעשות.
+              </p>
+              
+              <p className="text-lg">ואז גיליתי את עולם התכנות עם AI.</p>
+            </div>
             
+            {/* Image */}
+            <div className="flex justify-center my-8">
+              <img 
+                src={codingPerson} 
+                alt="תכנות עם AI" 
+                className="rounded-2xl max-w-md w-full shadow-gradient-glow border-2 border-border"
+              />
+            </div>
+            
+            {/* Second Text Block */}
+            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
+              <p className="text-lg">
+                בהתחלה זלזלתי - באמת.
+                <br />
+                חשבתי שזה צעצוע, סתם דרך לייצר אתרים בסיסיים ובינוניים.
+              </p>
+              
+              <p className="text-lg">ואז זה קרה.</p>
+              <p className="text-lg">נכנסתי לזה קצת יותר עמוק.</p>
+              <p className="text-lg">ניסיתי פרומפטים.</p>
+              <p className="text-lg">שיחקתי עם המבנה.</p>
+              <p className="text-lg">פיתחתי שיטות עבודה מתוחכמות.</p>
+              <p className="text-lg">בדקתי הגדרות.</p>
+              
+              <p className="text-lg">
+                ופתאום - זה נפתח.
+                <br />
+                <strong className="text-foreground font-semibold">הבנתי שאפשר לבנות ככה דברים מטורפים.</strong>
+                <br />
+                אתרים שנראים כאילו עלו 10,000 ₪.
+                <br />
+                אתרים מקצועיים, נקיים, ממותגים.
+              </p>
+            </div>
           </div>
         </div>
       </div>
