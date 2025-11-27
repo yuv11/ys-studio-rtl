@@ -10,18 +10,29 @@ import Footer from "@/components/Footer";
 import { Spotlight, GridBackground } from "@/components/ui/spotlight-new";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { Home, User, Briefcase, Cog, MessageSquare, DollarSign, HelpCircle, Mail } from "lucide-react";
-
 const Index = () => {
-  const navItems = [
-    { name: 'בית', url: '#hero', icon: Home },
-    { name: 'אודות', url: '#about', icon: User },
-    { name: 'עבודות', url: '#portfolio', icon: Briefcase },
-    { name: 'המלצות', url: '#testimonials', icon: MessageSquare },
-    { name: 'מחירים', url: '#pricing', icon: DollarSign }
-  ];
-
-  return (
-    <main className="min-h-screen relative">
+  const navItems = [{
+    name: 'בית',
+    url: '#hero',
+    icon: Home
+  }, {
+    name: 'אודות',
+    url: '#about',
+    icon: User
+  }, {
+    name: 'עבודות',
+    url: '#portfolio',
+    icon: Briefcase
+  }, {
+    name: 'המלצות',
+    url: '#testimonials',
+    icon: MessageSquare
+  }, {
+    name: 'מחירים',
+    url: '#pricing',
+    icon: DollarSign
+  }];
+  return <main className="min-h-screen relative">
       {/* Navigation */}
       <NavBar items={navItems} />
       
@@ -37,13 +48,13 @@ const Index = () => {
           <Hero />
         </section>
         <section id="about">
-          <About />
+          
         </section>
         <section id="portfolio">
           <Portfolio />
         </section>
         <section id="process">
-          <Process />
+          
         </section>
         <section id="testimonials">
           <Testimonials />
@@ -59,8 +70,6 @@ const Index = () => {
         </section>
         <Footer />
       </div>
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
