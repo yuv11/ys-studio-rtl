@@ -577,6 +577,114 @@ const Hero = () => {
               />
             </div>
           </div>
+          
+          {/* Bonuses Section */}
+          <div className="max-w-6xl mx-auto mt-32 space-y-12" dir="rtl">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                הבונוסים שהופכים את הקורס לשווה פי 3
+              </h2>
+              <p className="text-lg md:text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+                וכל אחד מהם הופעל גם בבניית הדף שאתה קורא עכשיו<br />
+                אלה לא סתם 'תוספות' — אלה כלים אמיתיים שעבדו בפועל תוך כדי בניית הדף הזה.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Bonus 1 */}
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/20 rounded-xl p-8 space-y-4 hover:border-primary/40 transition-all duration-300">
+                <div className="flex items-start justify-between gap-4">
+                  <div className="text-right flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      בונוס 1: סוכנת הקופי – מאיה
+                    </h3>
+                    <p className="text-xl font-semibold text-primary mb-3">
+                      שווי: 1,400 ₪
+                    </p>
+                    <p className="text-foreground/80 text-lg leading-relaxed">
+                      מאיה שואלת אותך שאלות, מבינה את העסק שלך, ומייצרת עבורך קופי מקצועי לכל האתר. היא כתבה גם את התוכן שאתה קורא עכשיו.
+                    </p>
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary">1</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Bonus 2 */}
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute top-4 left-4 text-3xl">⭐</div>
+                <div className="flex items-start justify-between gap-4">
+                  <div className="text-right flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      בונוס 2: סוכן הפרומפטים – ליאו
+                    </h3>
+                    <p className="text-xl font-semibold text-primary mb-3">
+                      שווי: 900 ₪
+                    </p>
+                    <p className="text-foreground/80 text-lg leading-relaxed">
+                      ליאו בונה עבורך פרומפטים מדויקים ללאבאבול — מבנה, עיצוב, סקשנים, הכול. גם המבנה והפרומטים של הדף הזה נבנו איתו.
+                    </p>
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary">2</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Bonus 3 */}
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute top-4 left-4 text-3xl">⭐</div>
+                <div className="flex items-start justify-between gap-4">
+                  <div className="text-right flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      בונוס 3: מאגר פרומפטים מוכן
+                    </h3>
+                    <p className="text-xl font-semibold text-primary mb-3">
+                      שווי: 600 ₪
+                    </p>
+                    <p className="text-foreground/80 text-lg leading-relaxed">
+                      פרומפטים מוכנים לבניית אתרים, כתיבה שיווקית, מיתוג, עיצוב והתנהלות עם ה-AI.
+                    </p>
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary">3</span>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Bonus 4 */}
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
+                <div className="absolute top-4 left-4 text-3xl">⭐</div>
+                <div className="flex items-start justify-between gap-4">
+                  <div className="text-right flex-1">
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      בונוס 4: מאגר משאבים + אתרי השראה
+                    </h3>
+                    <p className="text-xl font-semibold text-primary mb-3">
+                      שווי: 250 ₪
+                    </p>
+                    <p className="text-foreground/80 text-lg leading-relaxed">
+                      קובץ מסודר של כל הכלים המקצועיים שבהם אני משתמש — במקום לבזבז שעות בגוגל.
+                    </p>
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-2xl font-bold text-primary">4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Total Value Highlight */}
+            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary rounded-2xl p-10 text-center space-y-3 mt-12">
+              <p className="text-3xl md:text-4xl font-bold text-foreground">
+                שווי כולל הבונוסים: 3,150 ₪
+              </p>
+              <p className="text-xl md:text-2xl text-foreground/80">
+                וכל זה נכלל בתוך הקורס — ללא תוספת תשלום.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>;
