@@ -47,8 +47,8 @@ const Hero = () => {
           {/* Story Section */}
           <div className="max-w-3xl mx-auto mt-16 space-y-8">
             {/* First Text Block */}
-            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
-              <p className="text-lg">כשהתחלתי את הדרך שלי,</p>
+            <div className="text-right space-y-4 text-foreground/90 leading-relaxed mt-[84px]">
+              <p className="text-lg my-0">כשהתחלתי את הדרך שלי,</p>
               
               <p className="text-lg">
                 רציתי להיות <strong className="text-foreground font-semibold">בונה דפי נחיתה לעסקים</strong>.
