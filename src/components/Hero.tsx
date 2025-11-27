@@ -271,6 +271,89 @@ const Hero = () => {
               </Card>
             </div>
           </div>
+          
+          {/* What You'll Get Section */}
+          <div className="max-w-4xl mx-auto mt-24 space-y-12">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                מה תקבלו בתוך השיטה של SiteMaster AI
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                כל מה שאתם צריכים כדי לבנות אתר מקצועי, ממיר ומעוצב – אפילו אם אין לכם ניסיון.
+              </p>
+            </div>
+            
+            {/* Main Content Card - Different style from pain points */}
+            <Card className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/20 shadow-xl">
+              <CardContent className="p-8 md:p-12 space-y-6 text-right">
+                <div className="flex justify-center mb-8">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-gradient-glow">
+                    <Award className="w-8 h-8 text-primary-foreground" />
+                  </div>
+                </div>
+                
+                <ul className="space-y-4 text-lg text-foreground/90">
+                  <li className="flex items-start gap-3 justify-end">
+                    <span>איך לגרום ל־AI לכתוב עבורך קופי מקצועי וממיר</span>
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  </li>
+                  <li className="flex items-start gap-3 justify-end">
+                    <span>איך לגרום ל־AI לבנות עבורך אתר שנראה כמו 10,000 ₪</span>
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  </li>
+                  <li className="flex items-start gap-3 justify-end">
+                    <span>איך לבנות מותג ויזואלי ברור ומקצועי</span>
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  </li>
+                  <li className="flex items-start gap-3 justify-end">
+                    <span>איך למפות את האתר שלך בצורה נכונה כדי שיהיה ברור ויוביל אנשים לפעולה</span>
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  </li>
+                  <li className="flex items-start gap-3 justify-end">
+                    <span>איך לייצר בקלות ובמהירות אתרים איכותיים תוך שעות</span>
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  </li>
+                  <li className="flex items-start gap-3 justify-end">
+                    <span>איך להעלות את האתר שלך לאוויר ולשלוט בו בעצמך בקלות</span>
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            
+            {/* Pills Section */}
+            <div className="space-y-8">
+              <p className="text-center text-xl font-semibold text-foreground">
+                השיטה בנויה כך שגם מי שאין לו:
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <div className="flex items-center gap-3 px-6 py-4 rounded-full border-2 border-primary/30 bg-card/30 backdrop-blur justify-center hover:border-primary/50 transition-colors">
+                  <span className="text-primary text-xl">✔</span>
+                  <span className="text-foreground font-medium">חוש עיצובי</span>
+                </div>
+                
+                <div className="flex items-center gap-3 px-6 py-4 rounded-full border-2 border-primary/30 bg-card/30 backdrop-blur justify-center hover:border-primary/50 transition-colors">
+                  <span className="text-primary text-xl">✔</span>
+                  <span className="text-foreground font-medium">ניסיון בכתיבה</span>
+                </div>
+                
+                <div className="flex items-center gap-3 px-6 py-4 rounded-full border-2 border-primary/30 bg-card/30 backdrop-blur justify-center hover:border-primary/50 transition-colors">
+                  <span className="text-primary text-xl">✔</span>
+                  <span className="text-foreground font-medium">ידע טכני</span>
+                </div>
+                
+                <div className="flex items-center gap-3 px-6 py-4 rounded-full border-2 border-primary/30 bg-card/30 backdrop-blur justify-center hover:border-primary/50 transition-colors">
+                  <span className="text-primary text-xl">✔</span>
+                  <span className="text-foreground font-medium">ניסיון בבניית אתרים</span>
+                </div>
+              </div>
+              
+              <p className="text-center text-xl md:text-2xl font-bold text-foreground leading-relaxed max-w-3xl mx-auto">
+                ועדיין תוכלו להקים אתר מקצועי שנראה כמו מותג של מיליון דולר – תוך שעתיים.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>;
