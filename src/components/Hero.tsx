@@ -1,11 +1,6 @@
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import heroImage from "@/assets/hero-gradient.jpg";
 import codingPerson from "@/assets/coding-person.png";
 import phonesMockup from "@/assets/phones-mockup.png";
@@ -570,11 +565,7 @@ const Hero = () => {
             </div>
             
             <div className="w-full mt-12">
-              <img 
-                src={websiteResult} 
-                alt="תוצאה סופית - אתרים מקצועיים על מכשירים שונים" 
-                className="w-full h-auto rounded-lg"
-              />
+              <img src={websiteResult} alt="תוצאה סופית - אתרים מקצועיים על מכשירים שונים" className="w-full h-auto rounded-lg" />
             </div>
           </div>
           
@@ -592,12 +583,10 @@ const Hero = () => {
             
             <div className="grid md:grid-cols-2 gap-6">
               {/* Bonus 1 */}
-              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/20 rounded-xl p-8 space-y-4 hover:border-primary/40 transition-all duration-300">
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/20 rounded-xl p-8 space-y-4 hover:border-primary/40 transition-all duration-300 py-[10px]">
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-right flex-1">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">
-                      בונוס 1: סוכנת הקופי – מאיה
-                    </h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">סוכנת הקופי – מאיה</h3>
                     <p className="text-xl font-semibold text-primary mb-3">
                       שווי: 1,400 ₪
                     </p>
@@ -612,13 +601,11 @@ const Hero = () => {
               </div>
               
               {/* Bonus 2 */}
-              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
-                <div className="absolute top-4 left-4 text-3xl">⭐</div>
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden py-[10px]">
+                
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-right flex-1">
-                    <h3 className="text-2xl font-bold text-foreground mb-2">
-                      בונוס 2: סוכן הפרומפטים – ליאו
-                    </h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">סוכן הפרומפטים – ליאו</h3>
                     <p className="text-xl font-semibold text-primary mb-3">
                       שווי: 900 ₪
                     </p>
@@ -633,8 +620,8 @@ const Hero = () => {
               </div>
               
               {/* Bonus 3 */}
-              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
-                <div className="absolute top-4 left-4 text-3xl">⭐</div>
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden py-[10px]">
+                
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-right flex-1">
                     <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -654,8 +641,8 @@ const Hero = () => {
               </div>
               
               {/* Bonus 4 */}
-              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden">
-                <div className="absolute top-4 left-4 text-3xl">⭐</div>
+              <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden py-[10px]">
+                
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-right flex-1">
                     <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -676,7 +663,7 @@ const Hero = () => {
             </div>
             
             {/* Total Value Highlight */}
-            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary rounded-2xl p-10 text-center space-y-3 mt-12">
+            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary rounded-2xl p-10 text-center space-y-3 mt-12 py-[25px]">
               <p className="text-3xl md:text-4xl font-bold text-foreground">
                 שווי כולל הבונוסים: 3,150 ₪
               </p>
