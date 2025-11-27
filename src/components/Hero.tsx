@@ -24,11 +24,7 @@ const Hero = () => {
               <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-muted/30 to-muted/10">
                 <div className="text-center space-y-3">
                   <div className="w-20 h-20 mx-auto rounded-full bg-gradient-primary flex items-center justify-center">
-                    <svg 
-                      className="w-10 h-10 text-primary-foreground" 
-                      fill="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
+                    <svg className="w-10 h-10 text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>
@@ -40,7 +36,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-10 fade-in-delay-2">
             <GradientButton className="px-14" onClick={handleClick}>
-              בואו נתחיל
+              ​אני חייב כזה גם בעסק שלי!                
             </GradientButton>
             
           </div>
