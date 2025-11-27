@@ -856,6 +856,120 @@ const Hero = () => {
               </div>
             </div>
           </div>
+
+          {/* Emotional Reinforcement Section */}
+          <div dir="rtl" className="py-32 px-6">
+            <div className="max-w-5xl mx-auto space-y-16">
+              {/* Main Headline */}
+              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-center text-foreground leading-tight">
+                זה הרגע שלך - ואתה יודע את זה.
+              </h2>
+
+              {/* Emotional Intro */}
+              <div className="max-w-3xl mx-auto space-y-6 text-center">
+                <p className="text-2xl md:text-3xl text-foreground/90 leading-relaxed">
+                  אם הגעת עד כאן, אתה מרגיש את זה בבטן:<br />
+                  העסק שלך צריך אתר טוב יותר.
+                </p>
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                  לא 'יום אחד', לא 'כשיהיה זמן', לא 'כשהמעצב יתפנה'.
+                </p>
+                <p className="text-3xl md:text-4xl font-bold text-foreground">
+                  היום.<br />
+                  עכשיו.
+                </p>
+              </div>
+
+              {/* Sub-headline */}
+              <div className="max-w-3xl mx-auto text-center">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground leading-tight">
+                  כי כל יום בלי אתר מקצועי הוא יום שבו אתה מפסיד לקוחות.
+                </h3>
+              </div>
+
+              {/* Supporting Paragraph */}
+              <div className="max-w-3xl mx-auto space-y-6 text-center">
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+                  לקוח נכנס, לא מתרשם, יוצא – ואתה אפילו לא יודע שהוא היה שם.
+                </p>
+                <p className="text-lg md:text-xl text-muted-foreground/80 leading-relaxed">
+                  השאלה היא לא 'האם זה קורה?'<br />
+                  השאלה היא כמה פעמים זה כבר קרה בלי ששמת לב.
+                </p>
+              </div>
+
+              {/* Mid-section Headline */}
+              <div className="max-w-3xl mx-auto text-center pt-8">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                  תחשוב על זה רגע.
+                </h3>
+              </div>
+
+              {/* Creative Mini-Card Grid */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
+                {[
+                  { icon: "✨", text: "מקצועי" },
+                  { icon: "🎨", text: "ממותג" },
+                  { icon: "✓", text: "נקי" },
+                  { icon: "🛡️", text: "אמין" },
+                  { icon: "💬", text: "מסביר מי אתה" },
+                  { icon: "🎯", text: "מוביל אנשים להשאיר פרטים או לקנות" }
+                ].map((feature, index) => (
+                  <div 
+                    key={index}
+                    className="group relative p-6 rounded-2xl bg-card/40 backdrop-blur border border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)] hover:-translate-y-1 text-center"
+                  >
+                    <div className="text-4xl mb-3">{feature.icon}</div>
+                    <p className="text-lg font-semibold text-foreground">{feature.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Reflection Questions */}
+              <div className="max-w-3xl mx-auto space-y-6 text-center pt-8">
+                <div className="space-y-3 text-2xl md:text-3xl text-foreground/90 font-medium leading-relaxed">
+                  <p>מה יקרה למכירות שלך?</p>
+                  <p>לביטחון שלך?</p>
+                  <p>למחירים שאתה גובה?</p>
+                  <p>לרושם שאתה משאיר?</p>
+                </div>
+                <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed pt-6">
+                  לקוח שפוגש אתר טוב — מרגיש שאתה עסק טוב.<br />
+                  זה עד כדי כך פשוט.
+                </p>
+              </div>
+
+              {/* Final Motivational Block */}
+              <div className="max-w-3xl mx-auto space-y-8 text-center pt-12">
+                <p className="text-2xl md:text-3xl font-bold text-foreground leading-relaxed">
+                  ועכשיו, יש לך הזדמנות יוצאת דופן:
+                </p>
+                <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed">
+                  להיכנס לקורס שייתן לך יכולת לכל החיים —<br />
+                  לבנות אתר מקצועי תוך שעתיים, לבד, בלי תלות באף אחד.
+                </p>
+                
+                <div className="space-y-4 text-lg md:text-xl text-muted-foreground leading-relaxed pt-6">
+                  <p>לא עוד המתנה למעצב.</p>
+                  <p>לא עוד תשלום נוסף על שינוי קטן.</p>
+                  <p>לא עוד תחושות של 'זה לא מספיק טוב'.</p>
+                </div>
+
+                <div className="space-y-4 text-xl md:text-2xl font-bold text-foreground leading-relaxed pt-8">
+                  <p>אתה שולט באתר שלך.</p>
+                  <p>אתה בונה. אתה משנה. אתה מרים דפים חדשים.</p>
+                </div>
+
+                <div className="relative pt-8">
+                  <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
+                  <p className="relative text-2xl md:text-3xl font-black text-foreground leading-relaxed">
+                    ברגע שאתה לומד את השיטה — זה שלך לנצח<br />
+                    ואף אחד לא ייקח ממך את זה.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>;
