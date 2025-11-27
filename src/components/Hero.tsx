@@ -118,7 +118,7 @@ const Hero = () => {
               <p className="text-lg">
                 ובפעם הראשונה בחיי הרגשתי:
                 <br />
-                <strong className="text-foreground font-semibold">"רגע… זה כל כך קל. למה שלא כל בעל עסק יעשה את זה לבד?"</strong>
+                <strong className="text-foreground font-semibold text-xl">"רגע… זה כל כך קל. למה שלא כל בעל עסק יעשה את זה לבד?"</strong>
               </p>
               
               <p className="text-lg">
@@ -133,7 +133,7 @@ const Hero = () => {
                 אלא כי AI פשוט מאפשר ליצור דברים מדהימים בזמן קצר.
               </p>
               
-              <p className="text-lg">וזה הרגע שבו הבנתי את האמת הכי גדולה:</p>
+              <p className="font-semibold text-xl">וזה הרגע שבו הבנתי את הכל!</p>
             </div>
             
             {/* Woman Copywriter Image */}
@@ -144,7 +144,7 @@ const Hero = () => {
             {/* Fourth Text Block */}
             <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
               <p className="text-lg">
-                <strong className="text-foreground font-semibold">וכל זה התחבר ל־SiteMaster AI -</strong>
+                <strong className="text-foreground font-semibold text-2xl">וכל זה התחבר ל־SiteMaster AI -</strong>
                 <br />
                 שיטה שמאפשרת לכל בעל עסק לבנות אתר מעוצב, ממותג וממיר <strong className="text-foreground font-semibold">תוך שעתיים</strong>, בלי קוד ובלי שום ידע מוקדם בפיתוח, או עיצוב.
               </p>
