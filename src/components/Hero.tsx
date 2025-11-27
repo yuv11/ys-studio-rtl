@@ -56,19 +56,16 @@ const Hero = () => {
                 חשבתי שזה מקצוע שמאפשר לי לעזור, ליצור, לבנות - וגם להרוויח.
               </p>
               
-              <p className="text-lg">אבל מהר מאוד גיליתי את המציאות:</p>
+              <p className="text-lg">אבל מהר מאוד גיליתי את המציאות
+והבנתי שבניית אתר טוב לוקחת שבועות,
+ואין בשוק שום פתרון טוב ופשוט לזה...</p>
               
-              <ul className="text-lg space-y-2 mr-6">
-                <li>וורדפרס היה <em className="text-foreground/80">סיוט</em> לעבוד איתו.</li>
-                <li>בניית אתר טוב יכלה לקחת <strong className="text-foreground font-semibold">שבועות</strong>.</li>
-                <li>בעלי עסקים שילמו <strong className="text-foreground font-semibold">אלפי שקלים</strong> על אתרים בסיסיים.</li>
-                <li>וכל פעם שמישהו רצה שינוי באתר זה יצר המון כאב ראש.</li>
-              </ul>
+              
               
               <p className="text-lg">
                 ובאיזשהו שלב… שאלתי את עצמי:
                 <br />
-                <strong className="text-foreground font-semibold">"אם רק בעלי העסקים היו יכולים לבנות אתר בעצמם בקלות… זה היה משנה את כל התמונה!"</strong>
+                <strong className="text-foreground font-semibold text-xl">"אם רק בעלי העסקים היו יכולים לבנות אתר בעצמם בקלות… זה היה משנה את כל התמונה!"</strong>
               </p>
               
               <p className="text-lg">
@@ -77,7 +74,7 @@ const Hero = () => {
                 חקרתי, ניסיתי כלים, בדקתי מה אפשר לעשות.
               </p>
               
-              <p className="text-lg">ואז גיליתי את עולם התכנות עם AI.</p>
+              <p className="text-xl font-bold">ואז גיליתי את עולם התכנות עם AI.</p>
             </div>
             
             {/* Image */}
