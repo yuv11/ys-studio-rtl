@@ -168,7 +168,7 @@ const Hero = () => {
             
             {/* CTA Button */}
             <div className="flex justify-center mt-12">
-              <GradientButton className="px-14" onClick={handleClick}>
+              <GradientButton onClick={handleClick} className="px-14 border-primary-foreground bg-secondary">
                 אני בפנים!
               </GradientButton>
             </div>
