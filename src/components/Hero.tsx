@@ -1,5 +1,11 @@
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import heroImage from "@/assets/hero-gradient.jpg";
 import codingPerson from "@/assets/coding-person.png";
 import phonesMockup from "@/assets/phones-mockup.png";
@@ -353,6 +359,200 @@ const Hero = () => {
                 ועדיין תוכלו להקים אתר מקצועי שנראה כמו מותג של מיליון דולר – תוך שעתיים.
               </p>
             </div>
+          </div>
+          
+          {/* Course Modules Section */}
+          <div className="max-w-4xl mx-auto mt-24 space-y-12">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                מה תלמד בתוך SiteMaster AI
+              </h2>
+              <p className="text-lg md:text-xl text-muted-foreground">
+                הקורס בנוי כך שגם אדם בלי טיפת ניסיון יוכל להרים אתר מקצועי — מהר, ברור ובלי פחד טכני.
+              </p>
+            </div>
+            
+            <Accordion type="single" collapsible className="w-full space-y-4" dir="rtl">
+              <AccordionItem value="module-1" className="bg-card/50 backdrop-blur border border-border rounded-lg px-6">
+                <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
+                  מודול 1: בסיס – להרגיש את הקרקע
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-foreground/90 pr-4">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">ברוך הבא! מה הולכים לעשות וללמוד לאורך הקורס</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">ההבדל בין אתר לדף נחיתה - ומה העסק שלך באמת צריך</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">איך AI מאפשר לבנות אתרים שנראים מקצועיים ברמה גבוהה</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">היכרות עם כל הכלים שבהם נשתמש (כולל ספריית לינקים מלאה)</span>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="module-2" className="bg-card/50 backdrop-blur border border-border rounded-lg px-6">
+                <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
+                  מודול 2: מיתוג – ליצור מראה מקצועי ואחיד גם בלי להיות מעצב
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-foreground/90 pr-4">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">איך לבחור צבעים מקצועיים לעסק</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">איך ליצור שפה עיצובית אחידה שכל אתר טוב חייב</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">בחירת פונט שמתאים למותג</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">ההבדל בין אתר שנראה "זול" לאתר שנראה יוקרתי</span>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="module-3" className="bg-card/50 backdrop-blur border border-border rounded-lg px-6">
+                <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
+                  מודול 3: כתיבה שיווקית + מיפוי האתר – ליצור אתר שמוכר
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-foreground/90 pr-4">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">הקדמה למודול והבנת התהליך</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">מיפוי כל הסקשנים באתר עם AI</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">הגדרת קהל, מסר, מטרה</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">איך לכתוב את כל הטקסטים עם סוכנת הקופי מאיה (כולל פרומפטים ודוגמאות)</span>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="module-4" className="bg-card/50 backdrop-blur border border-border rounded-lg px-6">
+                <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
+                  מודול 4: בנייה ב־Lovable + קייס סטאדי
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-foreground/90 pr-4">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">פתיחת פרויקט והסבר על המערכת</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">מציאת השראה + שימוש בספריות קוד</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">עבודה עם MIRO</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">שימוש בסוכן הפרומפטים ליאו</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">בנייה מלאה של אתר אמיתי בלייב</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">הכנה לאוטומציות, טפסים, תשלום וכו…</span>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="module-5" className="bg-card/50 backdrop-blur border border-border rounded-lg px-6">
+                <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
+                  מודול 5: הצד הטכני – דברים קריטיים שאף אחד לא מסביר
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-foreground/90 pr-4">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">חיבור טפסים ואוטומציות</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">תשלום באתר</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">אחסון אתר</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">העלאה לגיטהב וחיבור לאחסון</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">חיבור דומיין</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">הוספת נגישות, עוגיות, מדיניות</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">SEO בסיסי</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">מעקב אנליטיקות</span>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="bonus" className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/20 rounded-lg px-6">
+                <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
+                  בונוסים שישפרו לכם את החיים
+                </AccordionTrigger>
+                <AccordionContent>
+                  <ul className="space-y-3 text-foreground/90 pr-4">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">מאגר כל האתרים והמשאבים</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">סוכנת AI לכתיבה שיווקית</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">סוכן AI לאפיון אתר + פרומפטים</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="text-right">מאגר הפרומפטים הסודי</span>
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>
