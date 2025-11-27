@@ -809,21 +809,51 @@ const Hero = () => {
             </div>
             
             {/* CTA Section */}
-            <div className="max-w-md mx-auto mt-16 space-y-6">
-              <input 
-                type="email" 
-                placeholder="הכנס/י את המייל שלך"
-                className="w-full px-6 py-4 text-lg rounded-xl border-2 border-border bg-card/50 backdrop-blur text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors text-center"
-              />
+            <div className="max-w-xl mx-auto mt-16 space-y-8">
+              {/* Email Input with Premium Styling */}
+              <div className="relative">
+                <div className="absolute inset-0 bg-primary/20 blur-xl rounded-2xl" />
+                <input 
+                  type="email" 
+                  placeholder="הכנס/י את המייל שלך"
+                  className="relative w-full px-8 py-5 text-xl rounded-2xl border-3 border-primary/40 bg-card/80 backdrop-blur-xl text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-primary focus:shadow-[0_0_30px_rgba(var(--primary-rgb),0.4)] transition-all duration-300 text-center font-medium hover:border-primary/60"
+                />
+              </div>
               
-              <button className="group relative w-full px-8 py-5 text-xl font-bold text-primary-foreground rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] shadow-[0_0_40px_rgba(var(--primary-rgb),0.3)] hover:shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)]">
-                {/* Glow effect */}
+              {/* Premium CTA Button */}
+              <button className="group relative w-full px-10 py-6 text-2xl font-black text-primary-foreground rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)]">
+                {/* Animated background gradient */}
                 <div className="absolute inset-0 bg-gradient-primary" />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
-                {/* Button text */}
-                <span className="relative z-10">לרכישה ב97% הנחה</span>
+                {/* Shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                
+                {/* Pulse effect on hover */}
+                <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-100 group-hover:animate-pulse" />
+                
+                {/* Button content */}
+                <span className="relative z-10 flex items-center justify-center gap-3">
+                  <span>🔥</span>
+                  <span>לרכישה ב-97% הנחה</span>
+                  <span>🔥</span>
+                </span>
               </button>
+              
+              {/* Trust indicators */}
+              <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground/80">
+                <div className="flex items-center gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>גישה מיידית</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>תשלום מאובטח</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>ללא התחייבות</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
