@@ -7,6 +7,8 @@ import phonesMockup from "@/assets/phones-mockup.png";
 import womanCopywriter from "@/assets/woman-copywriter.png";
 import courseMockup from "@/assets/course-mockup.png";
 import websiteResult from "@/assets/website-result.png";
+import restaurantMeal from "@/assets/restaurant-meal.jpg";
+import logoGraphic from "@/assets/logo-graphic.jpg";
 import { toast } from "@/hooks/use-toast";
 import { DollarSign, Settings, RefreshCw, Target, Award } from "lucide-react";
 const Hero = () => {
@@ -969,6 +971,110 @@ const Hero = () => {
                     ברגע שאתה לומד את השיטה — זה שלך לנצח<br />
                     ואף אחד לא ייקח ממך את זה.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Price Comparison Section */}
+          <div dir="rtl" className="py-32 px-6 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
+            <div className="max-w-5xl mx-auto space-y-16">
+              {/* Headline */}
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground leading-tight">
+                והכול במחיר שאפילו לא מתקרב לשווי האמיתי:
+              </h2>
+
+              {/* Price */}
+              <div className="text-center">
+                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">
+                  297 ₪ בלבד.
+                </p>
+              </div>
+
+              {/* Visual Comparisons */}
+              <div className="max-w-3xl mx-auto space-y-16 pt-8">
+                {/* Restaurant Comparison */}
+                <div className="space-y-6">
+                  <p className="text-2xl md:text-3xl text-center text-foreground/90 font-medium">
+                    זה פחות מארוחה זוגית במסעדה.
+                  </p>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <img 
+                      src={restaurantMeal} 
+                      alt="ארוחה במסעדה" 
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Logo Comparison */}
+                <div className="space-y-6">
+                  <p className="text-2xl md:text-3xl text-center text-foreground/90 font-medium">
+                    פחות מהעלות של לוגו ממוצע.
+                  </p>
+                  <div className="rounded-2xl overflow-hidden shadow-2xl">
+                    <img 
+                      src={logoGraphic} 
+                      alt="עיצוב לוגו" 
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Motivational Block */}
+              <div className="max-w-3xl mx-auto space-y-8 text-center pt-12">
+                <p className="text-3xl md:text-4xl font-bold text-foreground leading-relaxed">
+                  עכשיו זה עליך.
+                </p>
+                
+                <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed">
+                  אתה יכול להמשיך עוד חודש, עוד חצי שנה, עוד שנה –<br />
+                  בלי אתר שאתה גאה בו (או בלי אתר בכלל).
+                </p>
+
+                <div className="space-y-4 text-xl md:text-2xl text-muted-foreground leading-relaxed pt-6">
+                  <p>או שאתה יכול ללחוץ על הכפתור,</p>
+                  <p>להצטרף ל־SiteMaster AI,</p>
+                  <p className="font-bold text-foreground">ולבנות אתר מקצועי שנראה 10,000 ₪ – כבר השבוע.</p>
+                </div>
+
+                <div className="relative pt-8">
+                  <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
+                  <p className="relative text-2xl md:text-3xl font-black text-foreground">
+                    זו הזדמנות שאין סיבה לפספס.
+                  </p>
+                </div>
+              </div>
+
+              {/* CTA Block */}
+              <div className="max-w-2xl mx-auto space-y-6 pt-12">
+                <div className="relative group">
+                  {/* Background glow effect */}
+                  <div className="absolute inset-0 bg-primary/30 blur-2xl rounded-3xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
+                  
+                  {/* Email Input */}
+                  <div className="relative mb-6">
+                    <input
+                      type="email"
+                      placeholder="הכנס/י את המייל שלך"
+                      className="w-full px-8 py-6 text-xl text-white placeholder:text-white/60 bg-white/10 backdrop-blur-xl border-4 border-white/30 rounded-2xl focus:outline-none focus:border-white/50 focus:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:border-white/40 transition-all duration-300 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] font-semibold"
+                      dir="rtl"
+                    />
+                  </div>
+
+                  {/* CTA Button */}
+                  <button className="relative w-full group/btn overflow-hidden px-12 py-8 text-3xl font-black text-white bg-gradient-to-r from-primary via-primary to-primary rounded-2xl shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)] hover:scale-105 active:scale-95 transition-all duration-300">
+                    {/* Animated shine effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700" />
+                    
+                    {/* Button text */}
+                    <span className="relative flex items-center justify-center gap-3">
+                      <span className="animate-pulse">🔥</span>
+                      שמעתי מספיק — אני בפנים
+                      <span className="animate-pulse">🔥</span>
+                    </span>
+                  </button>
                 </div>
               </div>
             </div>
