@@ -85,7 +85,7 @@ const Hero = () => {
               <img 
                 src={codingPerson} 
                 alt="תכנות עם AI" 
-                className="rounded-2xl max-w-md w-full shadow-gradient-glow border-2 border-border"
+                className="rounded-2xl max-w-sm w-full shadow-gradient-glow"
               />
             </div>
             
@@ -120,7 +120,7 @@ const Hero = () => {
               <img 
                 src={phonesMockup} 
                 alt="דוגמאות אתרים בנייד" 
-                className="rounded-2xl max-w-3xl w-full shadow-gradient-glow"
+                className="rounded-2xl max-w-2xl w-full shadow-gradient-glow"
               />
             </div>
             
@@ -152,7 +152,7 @@ const Hero = () => {
               <img 
                 src={womanCopywriter} 
                 alt="מאיה - קופירייטרית" 
-                className="rounded-2xl max-w-2xl w-full shadow-gradient-glow border-2 border-border"
+                className="rounded-2xl max-w-xl w-full shadow-gradient-glow"
               />
             </div>
             
@@ -178,7 +178,7 @@ const Hero = () => {
               <img 
                 src={courseMockup} 
                 alt="הקורס המקיף SiteMaster AI" 
-                className="rounded-2xl max-w-3xl w-full shadow-gradient-glow"
+                className="rounded-2xl max-w-2xl w-full shadow-gradient-glow"
               />
             </div>
             
