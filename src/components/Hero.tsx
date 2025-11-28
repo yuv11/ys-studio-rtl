@@ -21,7 +21,7 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 md:px-12 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h1 className="text-4xl md:text-6xl leading-tight fade-in font-medium text-white lg:text-6xl">יש דרך לבנות אתר שנראה מקצועי וממותג - בלי לשבור את הראש ובלי לשלם אלפי שקלים</h1>
+          <h1 className="text-4xl md:text-6xl leading-tight fade-in text-white font-bold lg:text-5xl">יש דרך לבנות אתר שנראה מקצועי וממותג - בלי לשבור את הראש ובלי לשלם אלפי שקלים</h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed max-w-3xl mx-auto fade-in-delay-1">
             גם אתם יכולים לבנות בקלות ובמהירות אתרים שנראים כמו מיליון דולר באמצעות AI בלבד! (בדיוק כמו הדף נחיתה הזה)<br />
@@ -999,11 +999,7 @@ const Hero = () => {
                     זה פחות מארוחה זוגית במסעדה.
                   </p>
                   <div className="rounded-2xl overflow-hidden shadow-2xl">
-                    <img 
-                      src={restaurantMeal} 
-                      alt="ארוחה במסעדה" 
-                      className="w-full h-auto object-cover"
-                    />
+                    <img src={restaurantMeal} alt="ארוחה במסעדה" className="w-full h-auto object-cover" />
                   </div>
                 </div>
 
@@ -1013,11 +1009,7 @@ const Hero = () => {
                     פחות מהעלות של לוגו ממוצע.
                   </p>
                   <div className="rounded-2xl overflow-hidden shadow-2xl">
-                    <img 
-                      src={logoGraphic} 
-                      alt="עיצוב לוגו" 
-                      className="w-full h-auto object-cover"
-                    />
+                    <img src={logoGraphic} alt="עיצוב לוגו" className="w-full h-auto object-cover" />
                   </div>
                 </div>
               </div>
@@ -1055,12 +1047,7 @@ const Hero = () => {
                   
                   {/* Email Input */}
                   <div className="relative mb-6">
-                    <input
-                      type="email"
-                      placeholder="הכנס/י את המייל שלך"
-                      className="w-full px-8 py-6 text-xl text-white placeholder:text-white/60 bg-white/10 backdrop-blur-xl border-4 border-white/30 rounded-2xl focus:outline-none focus:border-white/50 focus:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:border-white/40 transition-all duration-300 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] font-semibold"
-                      dir="rtl"
-                    />
+                    <input type="email" placeholder="הכנס/י את המייל שלך" className="w-full px-8 py-6 text-xl text-white placeholder:text-white/60 bg-white/10 backdrop-blur-xl border-4 border-white/30 rounded-2xl focus:outline-none focus:border-white/50 focus:shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:border-white/40 transition-all duration-300 shadow-[0_0_20px_rgba(var(--primary-rgb),0.2)] font-semibold" dir="rtl" />
                   </div>
 
                   {/* CTA Button */}
