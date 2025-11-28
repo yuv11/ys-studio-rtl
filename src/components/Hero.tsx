@@ -631,7 +631,7 @@ const Hero = () => {
               {/* Bonus 3 */}
               <div className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/30 rounded-xl p-8 space-y-4 hover:border-primary/50 transition-all duration-300 relative overflow-hidden py-[10px]">
                 
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex items-start justify-between gap-4 my-[8px]">
                   <div className="text-right flex-1">
                     <h3 className="text-2xl font-bold text-foreground mb-2">
                       בונוס 3: מאגר פרומפטים מוכן
