@@ -51,16 +51,16 @@ const Index = () => {
           
         </section>
         <section id="portfolio">
-          <Portfolio />
+          
         </section>
         <section id="process">
           
         </section>
         <section id="testimonials">
-          <Testimonials />
+          
         </section>
         <section id="pricing">
-          <Pricing />
+          
         </section>
         <section id="faq">
           <FAQ />
