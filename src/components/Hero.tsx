@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
           
           {/* Story Section */}
-          <div className="max-w-4xl mx-auto mt-32 space-y-16">
+          <div className="max-w-4xl mx-auto mt-32 space-y-16 my-[70px]">
             {/* First Text Block */}
             <div className="text-center space-y-6 text-foreground/90 leading-relaxed">
               <p className="text-2xl md:text-3xl font-medium">כשהתחלתי את הדרך שלי,</p>
@@ -191,7 +191,7 @@ const Hero = () => {
           {/* Pain Points Section */}
           <div className="max-w-5xl mx-auto mt-24 space-y-12">
             <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight pt-0 mt-[90px]">
                 "אני חייב אתר שנראה מקצועי כדי להביא יותר לקוחות - אבל אין לי כסף, זמן או יכולת לבנות אחד."
               </h2>
               <p className="text-lg md:text-xl text-muted-foreground">
@@ -288,7 +288,7 @@ const Hero = () => {
           </div>
           
           {/* What You'll Get Section */}
-          <div className="max-w-4xl mx-auto mt-24 space-y-12 pt-[70px]">
+          <div className="max-w-4xl mx-auto space-y-12 pt-[70px] mt-[60px]">
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 מה תקבלו בתוך השיטה של SiteMaster AI
@@ -300,12 +300,8 @@ const Hero = () => {
             
             {/* Main Content Card - Different style from pain points */}
             <Card className="bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border-2 border-primary/20 shadow-xl">
-              <CardContent className="p-8 md:p-12 space-y-6 text-right">
-                <div className="flex justify-center mb-8">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-primary flex items-center justify-center shadow-gradient-glow">
-                    <Award className="w-8 h-8 text-primary-foreground" />
-                  </div>
-                </div>
+              <CardContent className="p-8 md:p-12 space-y-6 text-right py-[20px] pt-0 mb-0">
+                
                 
                 <ul className="space-y-4 text-lg text-foreground/90" dir="rtl">
                   <li className="flex items-start gap-3">
@@ -337,8 +333,8 @@ const Hero = () => {
             </Card>
             
             {/* Pills Section */}
-            <div className="space-y-8">
-              <p className="text-center text-xl font-semibold text-foreground">
+            <div className="space-y-8 mb-[130px]">
+              <p className="text-center text-xl font-semibold text-foreground mt-[20px]">
                 השיטה בנויה כך שגם מי שאין לו:
               </p>
               
@@ -381,7 +377,7 @@ const Hero = () => {
               </p>
             </div>
             
-            <Accordion type="single" collapsible className="w-full space-y-4" dir="rtl">
+            <Accordion type="single" collapsible dir="rtl" className="w-full space-y-4 mb-[100px]">
               <AccordionItem value="module-1" className="bg-card/50 backdrop-blur border border-border rounded-lg px-6">
                 <AccordionTrigger className="text-right text-lg md:text-xl font-semibold text-foreground hover:no-underline">
                   מודול 1: בסיס – להרגיש את הקרקע
@@ -566,7 +562,7 @@ const Hero = () => {
           
           {/* Final Result Section */}
           <div className="max-w-4xl mx-auto mt-24 space-y-12 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mt-0">
               בסוף התהליך - יש לך אתר מקצועי אמיתי. כזה שמביא לקוחות.
             </h2>
             
@@ -584,7 +580,7 @@ const Hero = () => {
           
           {/* Bonuses Section */}
           <div className="max-w-6xl mx-auto mt-32 space-y-12" dir="rtl">
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-4 mt-[60px]">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 הבונוסים שהופכים את הקורס לשווה פי 3
               </h2>
@@ -676,7 +672,7 @@ const Hero = () => {
             </div>
             
             {/* Total Value Highlight */}
-            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary rounded-2xl p-10 text-center space-y-3 mt-12 py-[25px]">
+            <div className="bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary rounded-2xl p-10 text-center space-y-3 mt-12 py-[25px] mb-0">
               <p className="text-3xl md:text-4xl font-bold text-foreground">
                 שווי כולל הבונוסים: 3,150 ₪
               </p>
@@ -687,7 +683,7 @@ const Hero = () => {
           </div>
           
           {/* Pricing Section */}
-          <div className="max-w-4xl mx-auto mt-32 space-y-12 text-center" dir="rtl">
+          <div dir="rtl" className="max-w-4xl mx-auto space-y-12 text-center mt-[130px]">
             {/* Headline */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
               הגיע הזמן לדבר על מחיר - וזה הולך להפתיע אותך
@@ -701,9 +697,7 @@ const Hero = () => {
             
             {/* First Dramatic Price */}
             <div className="bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-lg border-2 border-border rounded-2xl p-8 md:p-12 space-y-6">
-              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-                💸 המחיר היה צריך להיות לפחות: 10,450 ₪
-              </p>
+              <p className="text-3xl md:text-4xl font-bold text-foreground lg:text-4xl">המחיר היה צריך להיות לפחות: 10,450 ₪</p>
               
               {/* Breakdown */}
               <ul className="space-y-3 text-right text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
@@ -802,7 +796,7 @@ const Hero = () => {
               {/* Hero Price with Glow */}
               <div className="relative inline-block mx-auto">
                 <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-full scale-150" />
-                <div className="relative bg-gradient-to-br from-primary/30 to-primary/10 backdrop-blur-xl border-4 border-primary rounded-3xl px-12 md:px-20 py-8 md:py-12 shadow-[0_0_80px_rgba(var(--primary-rgb),0.4)]">
+                <div className="relative bg-gradient-to-br from-primary/30 to-primary/10 backdrop-blur-xl border-4 border-primary rounded-3xl px-12 md:px-20 py-8 shadow-[0_0_80px_rgba(var(--primary-rgb),0.4)] md:py-[30px]">
                   <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.6)]">
                     297 ₪ בלבד
                   </p>
@@ -811,9 +805,9 @@ const Hero = () => {
               
               {/* Reassurance */}
               <div className="space-y-2 text-xl md:text-2xl text-foreground/80 font-medium">
-                <p>ללא טריקים.</p>
-                <p>ללא תשלומים נסתרים.</p>
-                <p>ללא אותיות קטנות.</p>
+                <p>גישה לכל החיים</p>
+                <p>תשלום חד פעמי</p>
+                <p>בלי אותיות קטנות</p>
               </div>
               
               <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground pt-4">
@@ -870,7 +864,7 @@ const Hero = () => {
           <div dir="rtl" className="py-32 px-6">
             <div className="max-w-5xl mx-auto space-y-16">
               {/* Main Headline */}
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-center text-foreground leading-tight">
+              <h2 className="text-5xl md:text-6xl font-black text-center text-foreground leading-tight lg:text-5xl">
                 זה הרגע שלך - ואתה יודע את זה.
               </h2>
 
