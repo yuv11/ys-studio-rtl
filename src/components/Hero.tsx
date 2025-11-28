@@ -51,121 +51,128 @@ const Hero = () => {
           </div>
           
           {/* Story Section */}
-          <div className="max-w-3xl mx-auto mt-24 space-y-8">
+          <div className="max-w-4xl mx-auto mt-32 space-y-16">
             {/* First Text Block */}
-            <div className="text-right space-y-4 text-foreground/90 leading-relaxed mt-[84px]">
-              <p className="text-lg my-0">כשהתחלתי את הדרך שלי,</p>
+            <div className="text-center space-y-6 text-foreground/90 leading-relaxed">
+              <p className="text-2xl md:text-3xl font-medium">כשהתחלתי את הדרך שלי,</p>
               
-              <p className="text-lg">
-                רציתי להיות <strong className="text-foreground font-semibold">בונה דפי נחיתה לעסקים</strong>.
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+                רציתי להיות <strong className="text-foreground font-bold">בונה דפי נחיתה לעסקים</strong>.
                 <br />
                 חשבתי שזה מקצוע שמאפשר לי לעזור, ליצור, לבנות - וגם להרוויח.
               </p>
               
-              <p className="text-lg">אבל מהר מאוד גיליתי את המציאות
-והבנתי שבניית אתר טוב לוקחת שבועות,
-ואין בשוק שום פתרון טוב ופשוט לזה...</p>
-              
-              
-              
-              <p className="text-lg">
-                ובאיזשהו שלב… שאלתי את עצמי:
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+                אבל מהר מאוד גיליתי את המציאות והבנתי שבניית אתר טוב לוקחת שבועות,
                 <br />
-                <strong className="text-foreground font-semibold text-xl">"אם רק בעלי העסקים היו יכולים לבנות אתר בעצמם בקלות… זה היה משנה את כל התמונה!"</strong>
+                ואין בשוק שום פתרון טוב ופשוט לזה...
               </p>
               
-              <p className="text-lg">
+              <div className="pt-8">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground max-w-3xl mx-auto leading-relaxed">
+                  "אם רק בעלי העסקים היו יכולים לבנות אתר בעצמם בקלות… זה היה משנה את כל התמונה!"
+                </p>
+              </div>
+              
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto pt-6">
                 באותו זמן התחלתי להתעניין עמוק בעולם ה-AI.
                 <br />
                 חקרתי, ניסיתי כלים, בדקתי מה אפשר לעשות.
               </p>
               
-              <p className="text-xl font-bold">ואז גיליתי את עולם התכנות עם AI.</p>
+              <p className="text-2xl md:text-3xl font-bold text-primary pt-4">ואז גיליתי את עולם התכנות עם AI.</p>
             </div>
             
             {/* Image */}
-            <div className="flex justify-center my-8">
-              <img src={codingPerson} alt="תכנות עם AI" className="rounded-2xl max-w-sm w-full shadow-gradient-glow" />
+            <div className="flex justify-center">
+              <img src={codingPerson} alt="תכנות עם AI" className="rounded-2xl max-w-lg w-full shadow-gradient-glow" />
             </div>
             
             {/* Second Text Block */}
-            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
-              <p className="text-lg">
+            <div className="text-center space-y-6 text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl">
                 בהתחלה זלזלתי - באמת.
                 <br />
                 חשבתי שזה צעצוע, סתם דרך לייצר אתרים בסיסיים ובינוניים.
               </p>
               
-              <p className="text-lg">ואז זה קרה.</p>
-              <p className="text-lg">נכנסתי לזה קצת יותר עמוק.</p>
-              <p className="text-lg">ניסיתי פרומפטים.</p>
-              <p className="text-lg">שיחקתי עם המבנה.</p>
-              <p className="text-lg">פיתחתי שיטות עבודה מתוחכמות.</p>
-              <p className="text-lg">בדקתי הגדרות.</p>
+              <div className="space-y-3 text-lg md:text-xl text-muted-foreground">
+                <p>ואז זה קרה.</p>
+                <p>נכנסתי לזה קצת יותר עמוק.</p>
+                <p>ניסיתי פרומפטים.</p>
+                <p>שיחקתי עם המבנה.</p>
+                <p>פיתחתי שיטות עבודה מתוחכמות.</p>
+                <p>בדקתי הגדרות.</p>
+              </div>
               
-              <p className="text-lg">
-                ופתאום - זה נפתח.
-                <br />
-                <strong className="text-foreground font-semibold">הבנתי שאפשר לבנות ככה דברים מטורפים.</strong>
-                <br />
-                אתרים שנראים כאילו עלו 10,000 ₪.
-                <br />
-                אתרים מקצועיים, נקיים, ממותגים.
-              </p>
+              <div className="pt-6">
+                <p className="text-xl md:text-2xl font-semibold text-foreground">
+                  ופתאום - זה נפתח.
+                </p>
+                <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground pt-4 leading-relaxed">
+                  הבנתי שאפשר לבנות ככה דברים מטורפים.
+                </p>
+                <p className="text-xl md:text-2xl pt-4">
+                  אתרים שנראים כאילו עלו 10,000 ₪.
+                  <br />
+                  אתרים מקצועיים, נקיים, ממותגים.
+                </p>
+              </div>
             </div>
             
             {/* Phones Image */}
-            <div className="flex justify-center my-8">
+            <div className="flex justify-center">
               <img src={phonesMockup} alt="דוגמאות אתרים בנייד" className="max-w-2xl w-full shadow-none rounded-none" />
             </div>
             
             {/* Third Text Block */}
-            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
-              <p className="text-lg">
-                ובפעם הראשונה בחיי הרגשתי:
-                <br />
-                <strong className="text-foreground font-semibold text-xl">"רגע… זה כל כך קל. למה שלא כל בעל עסק יעשה את זה לבד?"</strong>
+            <div className="text-center space-y-6 text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-relaxed">
+                "רגע… זה כל כך קל. למה שלא כל בעל עסק יעשה את זה לבד?"
               </p>
               
-              <p className="text-lg">
+              <p className="text-xl md:text-2xl pt-4">
                 אז התחלתי לבנות לעסקים אתרים עם AI.
                 <br />
                 אחד ועוד אחד.
-                <br />
-                ואנשים <strong className="text-foreground font-semibold">עפו</strong> על התוצאות.
+              </p>
+              
+              <p className="text-xl md:text-2xl">
+                ואנשים <strong className="text-foreground font-bold">עפו</strong> על התוצאות.
                 <br />
                 לא כי אני גאון.
                 <br />
                 אלא כי AI פשוט מאפשר ליצור דברים מדהימים בזמן קצר.
               </p>
               
-              <p className="font-semibold text-xl">וזה הרגע שבו הבנתי את הכל!</p>
+              <p className="text-2xl md:text-3xl font-bold text-primary pt-6">וזה הרגע שבו הבנתי את הכל!</p>
             </div>
             
             {/* Woman Copywriter Image */}
-            <div className="flex justify-center my-8">
+            <div className="flex justify-center">
               <img src={womanCopywriter} alt="מאיה - קופירייטרית" className="rounded-2xl max-w-xl w-full shadow-gradient-glow" />
             </div>
             
             {/* Fourth Text Block */}
-            <div className="text-right space-y-4 text-foreground/90 leading-relaxed">
-              <p className="text-lg">
-                <strong className="text-foreground font-semibold text-2xl">וכל זה התחבר ל־SiteMaster AI -</strong>
-                <br />
-                שיטה שמאפשרת לכל בעל עסק לבנות אתר מעוצב, ממותג וממיר <strong className="text-foreground font-semibold">תוך שעתיים</strong>, בלי קוד ובלי שום ידע מוקדם בפיתוח, או עיצוב.
+            <div className="text-center space-y-6 text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground">
+                וכל זה התחבר ל־SiteMaster AI
               </p>
               
-              <p className="text-lg">
-                זה לא קסם.
-                <br />
-                זה פשוט שימוש נכון ב-AI.
+              <p className="text-xl md:text-2xl">
+                שיטה שמאפשרת לכל בעל עסק לבנות אתר מעוצב, ממותג וממיר <strong className="text-foreground font-bold">תוך שעתיים</strong>, בלי קוד ובלי שום ידע מוקדם בפיתוח, או עיצוב.
               </p>
               
-              <p className="text-lg">וזה מה שהקורס הזה בא לתת.</p>
+              <div className="space-y-3 text-xl md:text-2xl text-muted-foreground pt-4">
+                <p>זה לא קסם.</p>
+                <p>זה פשוט שימוש נכון ב-AI.</p>
+              </div>
+              
+              <p className="text-xl md:text-2xl font-semibold text-foreground pt-4">וזה מה שהקורס הזה בא לתת.</p>
             </div>
             
             {/* Course Mockup Image */}
-            <div className="flex justify-center my-8">
+            <div className="flex justify-center">
               <img src={courseMockup} alt="הקורס המקיף SiteMaster AI" className="max-w-xl w-full border-0 rounded-none shadow-none" />
             </div>
             
