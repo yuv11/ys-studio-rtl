@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-10 fade-in-delay-2">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-delay-2 pb-[50px] pt-[30px]">
             <GradientButton className="px-14" onClick={handleClick}>
               ​אני חייב כזה גם בעסק שלי!                
             </GradientButton>
@@ -122,7 +122,7 @@ const Hero = () => {
             
             {/* Phones Image */}
             <div className="flex justify-center">
-              <img src={phonesMockup} alt="דוגמאות אתרים בנייד" className="max-w-2xl w-full shadow-none rounded-none" />
+              <img src={phonesMockup} alt="דוגמאות אתרים בנייד" className="max-w-2xl w-full shadow-none rounded-none object-fill" />
             </div>
             
             {/* Third Text Block */}
