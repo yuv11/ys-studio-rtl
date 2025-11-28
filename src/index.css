@@ -206,11 +206,11 @@ All colors MUST be HSL.
   
   .gradient-button {
     @apply relative appearance-none cursor-pointer;
-    --color-1: #000;
-    --color-2: #1a1a1a;
-    --color-3: #2d2d2d;
-    --color-4: #404040;
-    --color-5: #1a1a1a;
+    --color-1: hsl(267, 84%, 30%);
+    --color-2: hsl(267, 84%, 45%);
+    --color-3: hsl(267, 84%, 57%);
+    --color-4: hsl(280, 84%, 50%);
+    --color-5: hsl(267, 84%, 40%);
     background: radial-gradient(
       var(--spread-x) var(--spread-y) at var(--pos-x) var(--pos-y),
       var(--color-1) var(--stop-1),
@@ -260,14 +260,14 @@ All colors MUST be HSL.
     --pos-y: 91.51%;
     --spread-x: 120.24%;
     --spread-y: 103.18%;
-    --color-1: #404040;
-    --color-2: #595959;
-    --color-3: #737373;
-    --color-4: #262626;
-    --color-5: #000;
+    --color-1: hsl(267, 84%, 65%);
+    --color-2: hsl(267, 84%, 57%);
+    --color-3: hsl(280, 84%, 60%);
+    --color-4: hsl(267, 84%, 45%);
+    --color-5: hsl(267, 84%, 40%);
     --border-angle: 190deg;
-    --border-color-1: hsla(0, 0%, 90%, 0.1);
-    --border-color-2: hsla(0, 0%, 90%, 0.6);
+    --border-color-1: hsla(267, 84%, 70%, 0.2);
+    --border-color-2: hsla(267, 84%, 80%, 0.7);
     --stop-1: 0%;
     --stop-2: 8.8%;
     --stop-3: 21.44%;
