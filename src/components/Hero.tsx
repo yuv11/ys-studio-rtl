@@ -836,9 +836,9 @@ const Hero = () => {
                 
                 {/* Button content */}
                 <span className="relative z-10 flex items-center justify-center gap-3">
-                  <span>🔥</span>
+                  
                   <span>לרכישה ב-97% הנחה</span>
-                  <span>🔥</span>
+                  
                 </span>
               </button>
               
@@ -982,7 +982,7 @@ const Hero = () => {
           </div>
 
           {/* Price Comparison Section */}
-          <div dir="rtl" className="py-32 px-6 bg-gradient-to-b from-transparent via-primary/5 to-transparent">
+          <div dir="rtl" className="px-6 bg-gradient-to-b from-transparent via-primary/5 to-transparent py-[60px]">
             <div className="max-w-5xl mx-auto space-y-16">
               {/* Headline */}
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground leading-tight">
@@ -1061,10 +1061,10 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700" />
                     
                     {/* Button text */}
-                    <span className="relative flex items-center justify-center gap-3">
-                      <span className="animate-pulse">🔥</span>
+                    <span className="relative flex items-center justify-center gap-3 text-2xl">
+                      
                       שמעתי מספיק — אני בפנים
-                      <span className="animate-pulse">🔥</span>
+                      
                     </span>
                   </button>
                 </div>
