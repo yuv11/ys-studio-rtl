@@ -367,7 +367,7 @@ const Hero = () => {
           </div>
           
           {/* Course Modules Section */}
-          <div className="max-w-4xl mx-auto mt-24 space-y-12">
+          <div className="max-w-4xl mx-auto space-y-12 mt-[120px]">
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 מה תלמד בתוך SiteMaster AI
