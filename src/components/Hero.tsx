@@ -13,9 +13,10 @@ import { toast } from "@/hooks/use-toast";
 import { DollarSign, Settings, RefreshCw, Target, Award } from "lucide-react";
 const Hero = () => {
   const handleClick = () => {
-    toast({
-      title: "שכרגע אני לא בונה דפי נחיתה"
-    });
+    const purchaseSection = document.getElementById('purchase-section');
+    if (purchaseSection) {
+      purchaseSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   };
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">{/* Removed bg-background to show shader */}
       
@@ -178,7 +179,7 @@ const Hero = () => {
             
             {/* CTA Button */}
             <div className="flex justify-center mt-12">
-              <GradientButton onClick={handleClick} className="px-14 text-black [background-image:none] bg-white">
+            <GradientButton onClick={handleClick} className="px-14">
                 אני רוצה להיות בפנים!👇     
               </GradientButton>
             </div>
@@ -818,7 +819,7 @@ const Hero = () => {
             </div>
             
             {/* CTA Section */}
-            <div className="max-w-xl mx-auto mt-16 space-y-8">
+            <div id="purchase-section" className="max-w-xl mx-auto mt-16 space-y-8">
               {/* Email Input with Premium Styling */}
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/30 blur-2xl rounded-2xl" />
@@ -826,7 +827,7 @@ const Hero = () => {
               </div>
               
               {/* Premium CTA Button */}
-              <button className="group relative w-full px-10 py-6 text-2xl font-black text-primary-foreground rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)]">
+              <button onClick={handleClick} className="group relative w-full px-10 py-6 text-2xl font-black text-primary-foreground rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)]">
                 {/* Animated background gradient */}
                 <div className="absolute inset-0 bg-gradient-primary" />
                 
@@ -1058,7 +1059,7 @@ const Hero = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <button className="relative w-full group/btn overflow-hidden px-12 py-8 text-3xl font-black text-white bg-gradient-to-r from-primary via-primary to-primary rounded-2xl shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)] hover:scale-105 active:scale-95 transition-all duration-300">
+                  <button onClick={handleClick} className="relative w-full group/btn overflow-hidden px-12 py-8 text-3xl font-black text-white bg-gradient-to-r from-primary via-primary to-primary rounded-2xl shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)] hover:scale-105 active:scale-95 transition-all duration-300">
                     {/* Animated shine effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700" />
                     
