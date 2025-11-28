@@ -66,7 +66,7 @@ const Index = () => {
           <FAQ />
         </section>
         <section id="contact">
-          <Contact />
+          
         </section>
         <Footer />
       </div>
