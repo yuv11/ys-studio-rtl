@@ -15,7 +15,10 @@ const Hero = () => {
   const handleClick = () => {
     const purchaseSection = document.getElementById('purchase-section');
     if (purchaseSection) {
-      purchaseSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      purchaseSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+      });
     }
   };
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">{/* Removed bg-background to show shader */}
@@ -285,7 +288,7 @@ const Hero = () => {
           </div>
           
           {/* What You'll Get Section */}
-          <div className="max-w-4xl mx-auto mt-24 space-y-12">
+          <div className="max-w-4xl mx-auto mt-24 space-y-12 pt-[70px]">
             <div className="text-center space-y-4">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                 מה תקבלו בתוך השיטה של SiteMaster AI
