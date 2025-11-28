@@ -150,7 +150,7 @@ const Hero = () => {
             
             {/* Woman Copywriter Image */}
             <div className="flex justify-center">
-              <img src={womanCopywriter} alt="מאיה - קופירייטרית" className="rounded-2xl max-w-xl w-full shadow-gradient-glow" />
+              
             </div>
             
             {/* Fourth Text Block */}
