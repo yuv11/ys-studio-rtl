@@ -910,7 +910,7 @@ const Hero = () => {
               </div>
 
               {/* Creative Mini-Card Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6 max-w-4xl mx-auto pt-4 md:pt-8">
                 {[{
                 icon: "✨",
                 text: "מקצועי"
@@ -929,9 +929,9 @@ const Hero = () => {
               }, {
                 icon: "🎯",
                 text: "מוביל אנשים להשאיר פרטים או לקנות"
-              }].map((feature, index) => <div key={index} className="group relative p-6 rounded-2xl bg-card/40 backdrop-blur border border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)] hover:-translate-y-1 text-center">
-                    <div className="text-4xl mb-3">{feature.icon}</div>
-                    <p className="text-lg font-semibold text-foreground">{feature.text}</p>
+              }].map((feature, index) => <div key={index} className="group relative p-3 md:p-6 rounded-xl md:rounded-2xl bg-card/40 backdrop-blur border border-border/50 hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_30px_rgba(var(--primary-rgb),0.2)] hover:-translate-y-1 text-center">
+                    <div className="text-2xl md:text-4xl mb-1 md:mb-3">{feature.icon}</div>
+                    <p className="text-sm md:text-lg font-semibold text-foreground">{feature.text}</p>
                   </div>)}
               </div>
 
