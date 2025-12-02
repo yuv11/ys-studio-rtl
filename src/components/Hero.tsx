@@ -25,7 +25,7 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 md:px-12 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <p className="text-base md:text-xl fade-in mb-1 font-medium text-primary/90 tracking-wide">מה אם הייתי אומר לך ש...</p>
+          <p className="text-base md:text-xl fade-in mb-0 font-medium text-primary/90 tracking-wide">מה אם הייתי אומר לך ש...</p>
           <h1 className="text-4xl md:text-6xl leading-tight fade-in text-white font-bold lg:text-5xl">יש דרך לבנות אתר שנראה מקצועי וממותג - בלי לשבור את הראש ובלי לשלם אלפי שקלים</h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed max-w-3xl mx-auto fade-in-delay-1">
