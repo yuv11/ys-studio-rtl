@@ -1,10 +1,8 @@
 import { GradientButton } from "@/components/ui/gradient-button";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, MessageCircle } from "lucide-react";
-
 const ThankYou = () => {
-  return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-6 py-16">
+  return <div className="min-h-screen bg-background flex items-center justify-center px-6 py-16">
       <div className="max-w-2xl mx-auto text-center space-y-12">
         
         {/* Success Icon */}
@@ -38,7 +36,7 @@ const ThankYou = () => {
           <ul className="space-y-4 text-lg text-foreground/90" dir="rtl">
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0" />
-              <span>הגישה לקורס זמינה לך כבר עכשיו</span>
+              <span>הגישה לקורס זמינה לך כבר עכשיו ונשלח לך גם קישור לכניסה במייל</span>
             </li>
             <li className="flex items-start gap-3">
               <div className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0" />
@@ -94,8 +92,6 @@ const ThankYou = () => {
         </div>
         
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default ThankYou;
