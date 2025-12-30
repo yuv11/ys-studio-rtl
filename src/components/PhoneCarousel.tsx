@@ -17,8 +17,13 @@ const videos: VideoItem[] = [{
   id: 2,
   url: "https://iframe.mediadelivery.net/embed/572361/d8989589-3ccf-482a-b5af-1b4e0940b620?autoplay=false&loop=true&muted=true&preload=true&responsive=true"
 }];
-const PhoneCarousel = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+
+interface PhoneCarouselProps {
+  className?: string;
+}
+
+const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
+  const [activeIndex, setActiveIndex] = useState(1);
   const [modalOpen, setModalOpen] = useState(false);
   const [modalVideoUrl, setModalVideoUrl] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
@@ -74,7 +79,7 @@ const PhoneCarousel = () => {
       };
     }
   };
-  return <section className="py-16 md:py-24 overflow-hidden">
+  return <section className={`py-16 md:py-24 overflow-hidden ${className || ''}`}>
       <div className="container mx-auto px-4">
         {/* Carousel Container */}
         <div ref={containerRef} className="relative h-[500px] md:h-[600px] flex items-center justify-center" style={{
