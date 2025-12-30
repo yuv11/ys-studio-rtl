@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import PhoneCarousel from "@/components/PhoneCarousel";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
@@ -47,9 +46,6 @@ const Index = () => {
       <div className="relative z-10">
         <section id="hero">
           <Hero />
-        </section>
-        <section id="phone-carousel">
-          <PhoneCarousel />
         </section>
         <section id="about">
           
