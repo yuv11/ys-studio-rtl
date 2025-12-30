@@ -45,11 +45,11 @@ const Index = () => {
       
       {/* Content layer */}
       <div className="relative z-10">
-        <section id="phone-carousel">
-          <PhoneCarousel />
-        </section>
         <section id="hero">
           <Hero />
+        </section>
+        <section id="phone-carousel">
+          <PhoneCarousel />
         </section>
         <section id="about">
           
