@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
-import { motion, AnimatePresence, PanInfo } from "framer-motion";
-import { X, Play } from "lucide-react";
+import { motion, PanInfo } from "framer-motion";
+import { X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface VideoItem {
@@ -12,15 +12,15 @@ interface VideoItem {
 const videos: VideoItem[] = [
   {
     id: 0,
-    url: "https://iframe.mediadelivery.net/play/572361/5a57ab00-cd8d-4dec-beda-603fd4f2b73e",
+    url: "https://iframe.mediadelivery.net/embed/572361/5a57ab00-cd8d-4dec-beda-603fd4f2b73e?autoplay=false&loop=true&muted=true&preload=true&responsive=true",
   },
   {
     id: 1,
-    url: "https://iframe.mediadelivery.net/play/572361/1f632b53-ad10-4e14-bd60-51e91bd4f047",
+    url: "https://iframe.mediadelivery.net/embed/572361/1f632b53-ad10-4e14-bd60-51e91bd4f047?autoplay=false&loop=true&muted=true&preload=true&responsive=true",
   },
   {
     id: 2,
-    url: "https://iframe.mediadelivery.net/play/572361/d8989589-3ccf-482a-b5af-1b4e0940b620",
+    url: "https://iframe.mediadelivery.net/embed/572361/d8989589-3ccf-482a-b5af-1b4e0940b620?autoplay=false&loop=true&muted=true&preload=true&responsive=true",
   },
 ];
 
@@ -135,21 +135,15 @@ const PhoneCarousel = () => {
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 md:w-32 h-6 md:h-7 bg-black rounded-b-2xl z-10" />
                         
                         {/* Video Container */}
-                        <div className="w-full h-full relative bg-zinc-900">
-                          {index === activeIndex ? (
-                            <div className="w-full h-full flex items-center justify-center bg-gradient-to-b from-zinc-800 to-zinc-900">
-                              <div className="text-center">
-                                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-3 hover:bg-primary/30 transition-colors">
-                                  <Play className="w-8 h-8 md:w-10 md:h-10 text-primary fill-primary" />
-                                </div>
-                                <p className="text-muted-foreground text-sm">לחץ לצפייה</p>
-                              </div>
-                            </div>
-                          ) : (
-                            <div className="w-full h-full bg-gradient-to-b from-zinc-700 to-zinc-800 flex items-center justify-center">
-                              <Play className="w-10 h-10 text-muted-foreground/50" />
-                            </div>
-                          )}
+                        <div className="w-full h-full relative bg-black">
+                          <iframe
+                            src={video.url}
+                            className="w-full h-full"
+                            loading="lazy"
+                            style={{ border: 0 }}
+                            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                            allowFullScreen
+                          />
                         </div>
                       </div>
                       
