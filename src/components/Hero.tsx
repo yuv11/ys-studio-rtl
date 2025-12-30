@@ -38,7 +38,7 @@ const Hero = () => {
           
           {/* Phone Carousel */}
           <div className="mt-8 fade-in-delay-2">
-            <PhoneCarousel />
+            <PhoneCarousel className="pt-[30px] py-0" />
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-delay-2 pb-[50px] pt-[30px]">
