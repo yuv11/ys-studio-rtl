@@ -827,7 +827,17 @@ const Hero = () => {
               </div>
               
               {/* Premium CTA Button */}
-              <a href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" target="_blank" rel="noopener noreferrer" className="group relative w-full px-10 py-6 text-2xl font-black text-primary-foreground rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)] block text-center">
+              <a 
+                href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).fbq) {
+                    (window as any).fbq('track', 'InitiateCheckout');
+                  }
+                }}
+                className="group relative w-full px-10 py-6 text-2xl font-black text-primary-foreground rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)] block text-center"
+              >
                 {/* Animated background gradient */}
                 <div className="absolute inset-0 bg-gradient-primary" />
                 
