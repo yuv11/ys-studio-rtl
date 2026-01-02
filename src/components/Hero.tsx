@@ -857,6 +857,116 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Money-Back Guarantee Section */}
+          <div dir="rtl" className="py-24 px-6">
+            <div className="max-w-5xl mx-auto">
+              <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border border-border/50 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
+                {/* Subtle background glow */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-primary/10 blur-3xl rounded-full pointer-events-none" />
+                
+                <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+                  {/* Visual - Shield Icon */}
+                  <div className="flex-shrink-0">
+                    <div className="relative">
+                      {/* Outer glow ring */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/20 rounded-full blur-2xl scale-150" />
+                      
+                      {/* Main shield container */}
+                      <div className="relative w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-primary/20 to-accent/10 rounded-full flex items-center justify-center border border-primary/30">
+                        {/* Inner shield */}
+                        <div className="w-24 h-24 md:w-28 md:h-28 bg-gradient-to-br from-primary/30 to-primary/10 rounded-full flex items-center justify-center border border-primary/40">
+                          <svg 
+                            className="w-12 h-12 md:w-16 md:h-16 text-primary drop-shadow-[0_0_20px_rgba(var(--primary-rgb),0.5)]" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            strokeWidth="2" 
+                            strokeLinecap="round" 
+                            strokeLinejoin="round"
+                          >
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="hsl(var(--primary) / 0.2)" />
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" className="text-accent" />
+                          </svg>
+                        </div>
+                      </div>
+                      
+                      {/* Floating badge */}
+                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-br from-accent to-primary text-primary-foreground text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                        100%
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="flex-1 text-center lg:text-right space-y-6">
+                    {/* Headline */}
+                    <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+                      אתר שנראה מיליון דולר – או החזר כספי
+                    </h3>
+                    
+                    {/* Description */}
+                    <div className="space-y-4 text-lg md:text-xl text-foreground/80 leading-relaxed">
+                      <p>
+                        הדבר שהכי חשוב לי זה שתהיה מרוצה מהקורס.
+                      </p>
+                      <p>
+                        אם תוך 24 שעות הרגשת שזה לא בשבילך – תקבל החזר כספי מלא. 
+                        <span className="font-semibold text-foreground"> בלי שאלות. בלי סיבוכים.</span>
+                      </p>
+                    </div>
+                    
+                    {/* Trust Points */}
+                    <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-6 pt-2">
+                      <div className="flex items-center gap-2 text-foreground/90">
+                        <div className="w-5 h-5 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                          <svg className="w-3 h-3 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                          </svg>
+                        </div>
+                        <span className="text-sm md:text-base font-medium">ניסיון בלי סיכון</span>
+                      </div>
+                      
+                      <div className="flex items-center gap-2 text-foreground/90">
+                        <div className="w-5 h-5 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                          <svg className="w-3 h-3 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                          </svg>
+                        </div>
+                        <span className="text-sm md:text-base font-medium">החזר כספי מלא</span>
+                      </div>
+                      
+                      <div className="flex items-center gap-2 text-foreground/90">
+                        <div className="w-5 h-5 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+                          <svg className="w-3 h-3 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                          </svg>
+                        </div>
+                        <span className="text-sm md:text-base font-medium">תמיכה טכנית מלאה בוואטסאפ</span>
+                      </div>
+                    </div>
+                    
+                    {/* CTA Button */}
+                    <div className="pt-4">
+                      <button 
+                        onClick={() => {
+                          document.getElementById('purchase-section')?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                        className="group inline-flex items-center gap-2 px-8 py-4 text-lg font-bold text-foreground bg-transparent border-2 border-primary/50 rounded-xl hover:bg-primary/10 hover:border-primary transition-all duration-300"
+                      >
+                        <span>אני רוצה אתר של מיליון דולר בלי סיכון!</span>
+                        <svg className="w-5 h-5 rotate-180 group-hover:-translate-y-1 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M12 19V5" />
+                          <path d="M5 12l7-7 7 7" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Emotional Reinforcement Section */}
           <div dir="rtl" className="py-32 px-6">
             <div className="max-w-5xl mx-auto space-y-16">
