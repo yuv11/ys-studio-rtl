@@ -858,7 +858,7 @@ const Hero = () => {
           </div>
 
           {/* Money-Back Guarantee Section */}
-          <div dir="rtl" className="py-24 px-6">
+          <div dir="rtl" className="px-0 py-[40px]">
             <div className="max-w-5xl mx-auto">
               <div className="relative bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-xl border border-border/50 rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden">
                 {/* Subtle background glow */}
