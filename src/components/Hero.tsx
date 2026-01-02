@@ -781,7 +781,7 @@ const Hero = () => {
             </div>
             
             {/* Final Price Reveal */}
-            <div className="relative space-y-8">
+            <div id="final-price-section" className="relative space-y-8">
               <p className="text-2xl md:text-3xl font-bold text-foreground">
                 🚀 מחיר השקה מיוחד ומשוגע לגמרי: (לזמן מוגבל!)
               </p>
@@ -950,7 +950,7 @@ const Hero = () => {
                     <div className="pt-4">
                       <button 
                         onClick={() => {
-                          document.getElementById('purchase-section')?.scrollIntoView({ behavior: 'smooth' });
+                          document.getElementById('final-price-section')?.scrollIntoView({ behavior: 'smooth' });
                         }}
                         className="group inline-flex items-center gap-2 px-8 py-4 text-lg font-bold text-foreground bg-transparent border-2 border-primary/50 rounded-xl hover:bg-primary/10 hover:border-primary transition-all duration-300"
                       >
