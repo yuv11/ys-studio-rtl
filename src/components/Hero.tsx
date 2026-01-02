@@ -847,7 +847,7 @@ const Hero = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-primary">✓</span>
-                  <span>תשלום מאובטח</span>
+                  <span>​אחריות ל-24 שעות       </span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-primary">✓</span>
