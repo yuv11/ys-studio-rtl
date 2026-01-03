@@ -790,9 +790,7 @@ const Hero = () => {
               <div className="relative inline-block mx-auto">
                 <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-full scale-150" />
                 <div className="relative bg-gradient-to-br from-primary/30 to-primary/10 backdrop-blur-xl border-4 border-primary rounded-3xl px-12 md:px-20 py-8 shadow-[0_0_80px_rgba(var(--primary-rgb),0.4)] md:py-[30px]">
-                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.6)]">
-                    297 ₪ בלבד
-                  </p>
+                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.6)]">197 ₪ בלבד</p>
                 </div>
               </div>
               
@@ -803,9 +801,7 @@ const Hero = () => {
                 <p>בלי אותיות קטנות</p>
               </div>
               
-              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground pt-4">
-                297 ₪ — ואתה יוצא עם אתר מקצועי שנראה מיליון דולר!
-              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground pt-4">197 ₪ - ואתה יוצא עם אתר מקצועי שנראה מיליון דולר!</p>
             </div>
             
             {/* CTA Section */}
@@ -1089,9 +1085,7 @@ const Hero = () => {
 
               {/* Price */}
               <div className="text-center">
-                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">
-                  297 ₪ בלבד.
-                </p>
+                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">197 ₪ בלבד.</p>
               </div>
 
               {/* Visual Comparisons */}
