@@ -704,11 +704,9 @@ const Hero = () => {
                   אתר שנראה מקצועי
                 </div>
                 <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">
-                  שלקח רק שעה לבנות
+                  הידע כדי לבנות אתר ממיר בשעה עבודה       
                 </div>
-                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">
-                  יכולת לבנות עוד בלי תלות
-                </div>
+                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">יכולת לבנות אינסןף אתרים</div>
               </div>
               
               <p className="text-xl text-foreground/80">מבחינתי – <strong className="text-foreground">זה עשה את העבודה.</strong></p>
@@ -754,17 +752,11 @@ const Hero = () => {
             
             {/* CTA Section */}
             <div id="purchase-section" className="max-w-xl mx-auto text-center">
-              <a 
-                href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).fbq) {
-                    (window as any).fbq('track', 'InitiateCheckout');
-                  }
-                }} 
-                className="group relative w-full px-10 py-6 text-xl md:text-2xl font-bold text-primary-foreground rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl block"
-              >
+              <a href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" target="_blank" rel="noopener noreferrer" onClick={() => {
+              if (typeof window !== 'undefined' && (window as any).fbq) {
+                (window as any).fbq('track', 'InitiateCheckout');
+              }
+            }} className="group relative w-full px-10 py-6 text-xl md:text-2xl font-bold text-primary-foreground rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl block">
                 <div className="absolute inset-0 bg-gradient-primary" />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                 <span className="relative z-10">אני רוצה גישה לקורס עוד היום!</span>
