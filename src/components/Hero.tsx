@@ -664,142 +664,114 @@ const Hero = () => {
           </div>
           
           {/* Pricing Section */}
-          <div dir="rtl" className="max-w-4xl mx-auto space-y-12 text-center mt-[130px]">
-            {/* Headline */}
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-              אז בוא נדבר רגע על המחיר
-            </h2>
-            
-            {/* Intro Text */}
-            <div className="space-y-4 text-xl md:text-2xl text-foreground/80">
-              <p>אני יכול לכתוב פה שזה שווה אלפי שקלים אבל רק היום יש 90% הנחה...</p>
-              <p>ואני יכול לעשות לך פומו ולספר שנשארו רק 3 מקומות אחרונים.</p>
+          <div dir="rtl" className="max-w-4xl mx-auto mt-[130px]">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+                אז בוא נדבר רגע על המחיר
+              </h2>
+              <p className="text-xl md:text-2xl text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+                אני יכול לכתוב פה שזה שווה אלפי שקלים אבל רק היום יש 90% הנחה...<br />
+                ואני יכול לעשות לך פומו ולספר שנשארו רק 3 מקומות אחרונים.
+              </p>
             </div>
             
-            {/* Honest approach */}
-            <div className="bg-gradient-to-br from-card/60 to-card/20 backdrop-blur-lg border-2 border-border rounded-2xl p-8 md:p-12 space-y-6">
-              <p className="text-2xl md:text-3xl font-bold text-foreground">אבל האמת?</p>
-              <p className="text-xl md:text-2xl text-foreground/80">אני לא מאמין בכל הטריקים הזולים האלה.</p>
-              
-              <p className="text-lg md:text-xl text-foreground font-semibold pt-4">מה שכן חשוב לי שתדע זה זה:</p>
-              
-              <div className="text-lg md:text-xl text-foreground/80 space-y-4 max-w-2xl mx-auto text-right">
-                <p>הקורס הזה נבנה כדי שתצא ממנו עם אתר אמיתי לעסק שלך,</p>
-                <p>וגם עם סקיל – היכולת לבנות אתרים עם AI לבד.</p>
-                <p>סקיל שתוכל להשתמש בו שוב ושוב,</p>
-                <p>בכל פרויקט, בכל מיזם, ובעולם שהולך חזק לכיוון AI.</p>
+            {/* The Real Talk Card */}
+            <div className="bg-card/40 backdrop-blur border border-border/50 rounded-2xl p-8 md:p-10 mb-12">
+              <div className="text-center space-y-6">
+                <p className="text-2xl md:text-3xl font-bold text-foreground">אבל האמת?</p>
+                <p className="text-xl text-foreground/70">אני לא מאמין בכל הטריקים הזולים האלה.</p>
+                
+                <div className="h-px bg-border/50 max-w-md mx-auto my-8" />
+                
+                <p className="text-lg md:text-xl text-primary font-semibold">מה שכן חשוב לי שתדע:</p>
+                
+                <div className="text-lg md:text-xl text-foreground/80 space-y-3 max-w-2xl mx-auto text-right">
+                  <p>הקורס הזה נבנה כדי שתצא ממנו עם אתר אמיתי לעסק שלך, וגם עם סקיל – היכולת לבנות אתרים עם AI לבד.</p>
+                  <p>סקיל שתוכל להשתמש בו שוב ושוב, בכל פרויקט, בכל מיזם, ובעולם שהולך חזק לכיוון AI.</p>
+                </div>
               </div>
             </div>
             
-            {/* Divider */}
-            <div className="flex items-center gap-4 max-w-xl mx-auto my-12">
-              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            </div>
-            
-            {/* What you get */}
-            <div className="space-y-6">
-              <p className="text-2xl md:text-3xl font-bold text-foreground">
+            {/* What You Get */}
+            <div className="text-center mb-16">
+              <p className="text-xl md:text-2xl font-bold text-foreground mb-6">
                 אם אחרי הקורס יש לך:
               </p>
               
-              <ul className="space-y-3 text-right text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span className="text-right">אתר שנראה מקצועי</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span className="text-right">שלקח רק שעה לבנות אותו</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                  <span className="text-right">ועם היכולת לבנות עוד כאלה בלי תלות באף אחד</span>
-                </li>
-              </ul>
-              
-              <p className="text-xl md:text-2xl text-foreground font-semibold pt-4">
-                מבחינתי – זה עשה את העבודה.
-              </p>
-            </div>
-            
-            {/* Divider */}
-            <div className="flex items-center gap-4 max-w-xl mx-auto my-12">
-              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            </div>
-            
-            {/* Final Price Reveal */}
-            <div id="final-price-section" className="relative space-y-8">
-              <p className="text-2xl md:text-3xl font-bold text-foreground">
-                המחיר של הקורס כרגע הוא:
-              </p>
-              
-              {/* Hero Price with Glow */}
-              <div className="relative inline-block mx-auto">
-                <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-full scale-150" />
-                <div className="relative bg-gradient-to-br from-primary/30 to-primary/10 backdrop-blur-xl border-4 border-primary rounded-3xl px-12 md:px-20 py-8 shadow-[0_0_80px_rgba(var(--primary-rgb),0.4)] md:py-[30px]">
-                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground drop-shadow-[0_0_30px_rgba(var(--primary-rgb),0.6)]">197 ₪</p>
+              <div className="flex flex-wrap justify-center gap-4 mb-6">
+                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">
+                  אתר שנראה מקצועי
+                </div>
+                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">
+                  שלקח רק שעה לבנות
+                </div>
+                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">
+                  יכולת לבנות עוד בלי תלות
                 </div>
               </div>
               
-              {/* Reassurance */}
-              <div className="space-y-2 text-xl md:text-2xl text-foreground/80 font-medium">
-                <p>תשלום חד פעמי</p>
-                <p>אחריות ל24 שעות</p>
-                <p>וגישה לכל החיים</p>
+              <p className="text-xl text-foreground/80">מבחינתי – <strong className="text-foreground">זה עשה את העבודה.</strong></p>
+            </div>
+            
+            {/* Price Section */}
+            <div id="final-price-section" className="text-center mb-16">
+              <p className="text-xl md:text-2xl text-foreground/80 mb-4">המחיר של הקורס כרגע הוא:</p>
+              
+              {/* Price Display */}
+              <div className="relative inline-block mb-8">
+                <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-150" />
+                <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur border-2 border-primary/40 rounded-2xl px-16 py-8">
+                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground">197 ₪</p>
+                </div>
               </div>
               
-              <div className="text-lg md:text-xl text-foreground/80 space-y-4 max-w-2xl mx-auto pt-4">
-                <p className="font-semibold text-foreground">זה מחיר השקה.</p>
-                <p>הוא לא הולך להישאר ככה.</p>
+              {/* Terms */}
+              <div className="flex flex-wrap justify-center gap-6 text-lg text-foreground/70 mb-8">
+                <span>תשלום חד פעמי</span>
+                <span>•</span>
+                <span>אחריות 24 שעות</span>
+                <span>•</span>
+                <span>גישה לכל החיים</span>
+              </div>
+              
+              <div className="max-w-xl mx-auto space-y-3 text-lg text-foreground/70">
+                <p><strong className="text-foreground">זה מחיר השקה.</strong> הוא לא הולך להישאר ככה.</p>
                 <p>בהמשך, כשהקורס יתעדכן ויתווספו אליו תכנים – המחיר יעלה.</p>
               </div>
             </div>
             
-            {/* Divider */}
-            <div className="flex items-center gap-4 max-w-xl mx-auto my-12">
-              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            </div>
-            
-            {/* Final message */}
-            <div className="space-y-6 text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
-              <p>אם 197 ₪ מרגיש לך יקר בשביל משהו שיכול לחסוך לך זמן, כסף ותלות בעתיד – אולי זה לא הזמן הנכון עבורך כרגע בשביל הקורס.</p>
-              <p>אבל אם אתה רוצה לבנות אתר לעסק שלך ולצאת עם סקיל שיישאר איתך גם הרבה אחרי הקורס –</p>
-              <p className="text-2xl md:text-3xl font-bold text-foreground">זה בדיוק המקום.</p>
+            {/* Final Message */}
+            <div className="bg-card/30 backdrop-blur border border-border/30 rounded-2xl p-8 text-center mb-12">
+              <p className="text-lg text-foreground/70 mb-4">
+                אם 197 ₪ מרגיש לך יקר בשביל משהו שיכול לחסוך לך זמן, כסף ותלות בעתיד – אולי זה לא הזמן הנכון עבורך.
+              </p>
+              <p className="text-lg text-foreground/70 mb-4">
+                אבל אם אתה רוצה לבנות אתר לעסק שלך ולצאת עם סקיל שיישאר איתך גם הרבה אחרי הקורס –
+              </p>
+              <p className="text-xl md:text-2xl font-bold text-primary">זה בדיוק המקום.</p>
             </div>
             
             {/* CTA Section */}
-            <div id="purchase-section" className="max-w-xl mx-auto mt-16 space-y-8">
-              {/* Email Input with Premium Styling */}
-              <div className="relative">
-                <div className="absolute inset-0 bg-primary/30 blur-2xl rounded-2xl" />
-                
-              </div>
-              
-              {/* Premium CTA Button */}
-              <a href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" target="_blank" rel="noopener noreferrer" onClick={() => {
-              if (typeof window !== 'undefined' && (window as any).fbq) {
-                (window as any).fbq('track', 'InitiateCheckout');
-              }
-            }} className="group relative w-full px-10 py-6 text-2xl font-black text-primary-foreground rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] shadow-[0_0_60px_rgba(var(--primary-rgb),0.5)] hover:shadow-[0_0_80px_rgba(var(--primary-rgb),0.7)] block text-center">
-                {/* Animated background gradient */}
+            <div id="purchase-section" className="max-w-xl mx-auto text-center">
+              <a 
+                href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).fbq) {
+                    (window as any).fbq('track', 'InitiateCheckout');
+                  }
+                }} 
+                className="group relative w-full px-10 py-6 text-xl md:text-2xl font-bold text-primary-foreground rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl block"
+              >
                 <div className="absolute inset-0 bg-gradient-primary" />
-                
-                {/* Shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                
-                {/* Pulse effect on hover */}
-                <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-100 group-hover:animate-pulse" />
-                
-                {/* Button content */}
-                <span className="relative z-10 flex items-center justify-center gap-3">
-                  
-                  <span>אני רוצה גישה לקורס עוד היום!</span>
-                  
-                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+                <span className="relative z-10">אני רוצה גישה לקורס עוד היום!</span>
               </a>
               
               {/* Trust indicators */}
-              <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground/80">
+              <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <span className="text-primary">✓</span>
                   <span>גישה מיידית</span>
