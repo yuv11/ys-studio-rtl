@@ -589,9 +589,7 @@ const Hero = () => {
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-right flex-1">
                     <h3 className="text-2xl font-bold text-foreground mb-2">סוכנת הקופי – מאיה</h3>
-                    <p className="text-xl font-semibold text-primary mb-3">
-                      שווי: 1,400 ₪
-                    </p>
+                    
                     <p className="text-foreground/80 text-lg leading-relaxed">
                       מאיה שואלת אותך שאלות, מבינה את העסק שלך, ומייצרת עבורך קופי מקצועי לכל האתר. היא כתבה גם את התוכן שאתה קורא עכשיו.
                     </p>
@@ -608,9 +606,7 @@ const Hero = () => {
                 <div className="flex items-start justify-between gap-4">
                   <div className="text-right flex-1">
                     <h3 className="text-2xl font-bold text-foreground mb-2">סוכן הפרומפטים – ליאו</h3>
-                    <p className="text-xl font-semibold text-primary mb-3">
-                      שווי: 900 ₪
-                    </p>
+                    
                     <p className="text-foreground/80 text-lg leading-relaxed">
                       ליאו בונה עבורך פרומפטים מדויקים ללאבאבול — מבנה, עיצוב, סקשנים, הכול. גם המבנה והפרומטים של הדף הזה נבנו איתו.
                     </p>
@@ -629,9 +625,7 @@ const Hero = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-2">
                       בונוס 3: מאגר פרומפטים מוכן
                     </h3>
-                    <p className="text-xl font-semibold text-primary mb-3">
-                      שווי: 600 ₪
-                    </p>
+                    
                     <p className="text-foreground/80 text-lg leading-relaxed">
                       פרומפטים מוכנים לבניית אתרים, כתיבה שיווקית, מיתוג, עיצוב והתנהלות עם ה-AI.
                     </p>
@@ -650,9 +644,7 @@ const Hero = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-2">
                       בונוס 4: מאגר משאבים + אתרי השראה
                     </h3>
-                    <p className="text-xl font-semibold text-primary mb-3">
-                      שווי: 250 ₪
-                    </p>
+                    
                     <p className="text-foreground/80 text-lg leading-relaxed">
                       קובץ מסודר של כל הכלים המקצועיים שבהם אני משתמש — במקום לבזבז שעות בגוגל.
                     </p>
