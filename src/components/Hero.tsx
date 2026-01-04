@@ -280,6 +280,98 @@ const Hero = () => {
             </div>
           </div>
           
+          {/* Who Is This Course For Section */}
+          <div className="max-w-4xl mx-auto space-y-12 mt-24">
+            <div className="text-center space-y-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+                למי הקורס הזה מתאים
+              </h2>
+            </div>
+            
+            {/* For Who - Positive */}
+            <div className="space-y-6">
+              <h3 className="text-xl md:text-2xl font-semibold text-foreground text-center">
+                הוא מתאים ל־
+              </h3>
+              
+              <div className="grid gap-4 max-w-3xl mx-auto">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-primary text-lg">✓</span>
+                  </div>
+                  <p className="text-foreground/90 text-lg text-right">בעלי עסקים שרוצים לבנות לעצמם אתר מקצועי בלי תלות בבונה אתרים</p>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-primary text-lg">✓</span>
+                  </div>
+                  <p className="text-foreground/90 text-lg text-right">יזמים בתחילת הדרך שרוצים להרים אתר או דף נחיתה מהר ולצאת לשוק</p>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-primary text-lg">✓</span>
+                  </div>
+                  <p className="text-foreground/90 text-lg text-right">פרילנסרים ונותני שירות שרוצים שליטה מלאה על האתר שלהם</p>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-primary text-lg">✓</span>
+                  </div>
+                  <p className="text-foreground/90 text-lg text-right">מעצבים ובוני אתרים שרוצים ללמוד על עולם הבנייה עם AI כדי להתכונן לעתיד ולא להישאר מאחור</p>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-primary text-lg">✓</span>
+                  </div>
+                  <p className="text-foreground/90 text-lg text-right">אנשים שרוצים ללמוד AI בצורה פרקטית ויישומית</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Not For Who - Negative */}
+            <div className="space-y-6">
+              <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground text-center">
+                ולמי זה פחות מתאים
+              </h3>
+              
+              <div className="grid gap-4 max-w-3xl mx-auto">
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/30 border border-border/50">
+                  <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-muted-foreground text-lg">✕</span>
+                  </div>
+                  <p className="text-muted-foreground text-lg text-right">מי שלא רוצה לעבוד יותר מ2 דקות על אתר</p>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/30 border border-border/50">
+                  <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-muted-foreground text-lg">✕</span>
+                  </div>
+                  <p className="text-muted-foreground text-lg text-right">מי שלא מוכן ליישם</p>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-muted/30 border border-border/50">
+                  <div className="w-8 h-8 rounded-full bg-muted flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-muted-foreground text-lg">✕</span>
+                  </div>
+                  <p className="text-muted-foreground text-lg text-right">מי שמחפש ללמוד קוד לעומק או רוצה לבנות אתרים בדרך מסורתית וישנה</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Closing Statement */}
+            <div className="text-center pt-8">
+              <p className="text-xl md:text-2xl font-medium text-foreground max-w-2xl mx-auto leading-relaxed">
+                אם אתה מחפש שליטה, עצמאות וסקיל שיישאר איתך לאורך זמן –
+                <br />
+                <span className="text-primary font-bold">זה בדיוק המקום.</span>
+              </p>
+            </div>
+          </div>
+          
           {/* What You'll Get Section */}
           <div className="max-w-4xl mx-auto space-y-12 pt-[70px] mt-[60px]">
             <div className="text-center space-y-4">
