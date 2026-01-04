@@ -658,12 +658,8 @@ const Hero = () => {
             
             {/* Total Value Highlight */}
             <div className="bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary rounded-2xl p-10 text-center space-y-3 mt-12 py-[25px] mb-0">
-              <p className="text-3xl md:text-4xl font-bold text-foreground">
-                שווי כולל הבונוסים: 3,150 ₪
-              </p>
-              <p className="text-xl md:text-2xl text-foreground/80">
-                וכל זה נכלל בתוך הקורס — ללא תוספת תשלום.
-              </p>
+              <p className="text-3xl md:text-4xl font-bold text-foreground">כל הבונוסים כלולים בחינם עם הקורס ויחסכו לך עשרות שעות</p>
+              <p className="text-xl md:text-2xl text-foreground/80">הבונוסים יישלחו אליך למייל תוך 5 שניות לאחר הרכישה של הקורס</p>
             </div>
           </div>
           
