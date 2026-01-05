@@ -813,7 +813,7 @@ const Hero = () => {
               <div className="relative inline-block mb-8">
                 <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-150" />
                 <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur border-2 border-primary/40 rounded-2xl px-16 py-8">
-                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground">197 ₪</p>
+                  <p className="text-5xl md:text-6xl lg:text-7xl font-black text-foreground">169 ₪</p>
                 </div>
               </div>
               
