@@ -129,7 +129,7 @@ const PortfolioPage = () => {
       {/* Sticky CTA Button */}
       <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-background via-background/95 to-transparent">
         <div className="max-w-md mx-auto">
-          <Link to="/#purchase-section">
+          <Link to="/#final-price-section">
             <GradientButton className="w-full py-4 text-lg font-bold">
               ​ראיתי מספיק, אני רוצה גישה לקורס        
             </GradientButton>
