@@ -12,6 +12,7 @@ import logoGraphic from "@/assets/logo-graphic.jpg";
 import { toast } from "@/hooks/use-toast";
 import { DollarSign, Settings, RefreshCw, Target, Award } from "lucide-react";
 import PhoneCarousel from "@/components/PhoneCarousel";
+import PurchaseForm from "@/components/PurchaseForm";
 const Hero = () => {
   const handleClick = () => {
     const purchaseSection = document.getElementById('purchase-section');
@@ -842,33 +843,9 @@ const Hero = () => {
               <p className="text-xl md:text-2xl font-bold text-primary">זה בדיוק המקום.</p>
             </div>
             
-            {/* CTA Section */}
+            {/* CTA Section with Lead Form */}
             <div id="purchase-section" className="max-w-xl mx-auto text-center">
-              <a href="https://pay.grow.link/7f405a5f9744123473b208a02b368179-MjkwMjI5Mw" target="_blank" rel="noopener noreferrer" onClick={() => {
-              if (typeof window !== 'undefined' && (window as any).fbq) {
-                (window as any).fbq('track', 'InitiateCheckout');
-              }
-            }} className="group relative w-full px-10 py-6 text-xl md:text-2xl font-bold text-primary-foreground rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg hover:shadow-xl block">
-                <div className="absolute inset-0 bg-gradient-primary" />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                <span className="relative z-10">אני רוצה גישה לקורס עוד היום!</span>
-              </a>
-              
-              {/* Trust indicators */}
-              <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mt-6 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>גישה מיידית</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>אחריות החזר 24 שעות</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-primary">✓</span>
-                  <span>תשלום חד פעמי</span>
-                </div>
-              </div>
+              <PurchaseForm />
             </div>
           </div>
 
