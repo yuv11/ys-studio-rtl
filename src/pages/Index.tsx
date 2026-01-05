@@ -5,6 +5,7 @@ import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
+import MeetYuval from "@/components/MeetYuval";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -65,6 +66,9 @@ const Index = () => {
         </section>
         <section id="faq">
           <FAQ />
+        </section>
+        <section id="meet-yuval">
+          <MeetYuval />
         </section>
         <section id="contact">
           
