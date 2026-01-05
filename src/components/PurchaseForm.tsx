@@ -80,6 +80,12 @@ const PurchaseForm = () => {
         {/* Glow effects */}
         <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/30 blur-3xl rounded-full pointer-events-none" />
         <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/20 blur-3xl rounded-full pointer-events-none" />
+        
+        {/* Heading */}
+        <h3 className="relative z-10 text-2xl md:text-3xl font-bold text-center text-foreground" dir="rtl">
+          לגישה לקורס וכל הבונוסים במחיר השקה - <span className="text-primary">169₪</span> בלבד!
+        </h3>
+        
         {/* Name Input */}
         <div className="space-y-2">
           <input
