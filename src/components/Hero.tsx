@@ -834,9 +834,7 @@ const Hero = () => {
             
             {/* Final Message */}
             <div className="bg-card/30 backdrop-blur border border-border/30 rounded-2xl p-8 text-center mb-12">
-              <p className="text-lg text-foreground/70 mb-4">
-                אם 197 ₪ מרגיש לך יקר בשביל משהו שיכול לחסוך לך זמן, כסף ותלות בעתיד – אולי זה לא הזמן הנכון עבורך.
-              </p>
+              <p className="text-lg text-foreground/70 mb-4">אם 169 ₪ מרגיש לך יקר בשביל משהו שיכול לחסוך לך זמן, כסף ותלות בעתיד – אולי זה לא הזמן הנכון עבורך.</p>
               <p className="text-lg text-foreground/70 mb-4">
                 אבל אם אתה רוצה לבנות אתר לעסק שלך ולצאת עם סקיל שיישאר איתך גם הרבה אחרי הקורס –
               </p>
@@ -1081,7 +1079,7 @@ const Hero = () => {
 
               {/* Price */}
               <div className="text-center">
-                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">197 ₪ בלבד.</p>
+                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">169 ₪ בלבד.</p>
               </div>
 
               {/* Visual Comparisons */}
