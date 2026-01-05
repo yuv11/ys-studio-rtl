@@ -819,7 +819,7 @@ const Hero = () => {
               
               {/* Terms */}
               <div className="flex flex-wrap justify-center gap-6 text-lg text-foreground/70 mb-8">
-                <span>תשלום חד פעמי</span>
+                <span>גישה בחינם לתכנים עתידיים שיצאו</span>
                 <span>•</span>
                 <span>אחריות 24 שעות</span>
                 <span>•</span>
