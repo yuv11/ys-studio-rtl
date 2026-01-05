@@ -1,35 +1,48 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
+import { GradientButton } from "@/components/ui/gradient-button";
+
 const FAQ = () => {
   const faqs = [{
     question: "אני לא טכני בכלל… זה מתאים לי?",
-    answer: "חד משמעית כן. הקורס בנוי לאנשים שלא באים מהעולם הזה. אין פה קוד, אין פה הגדרות מסובכות – הכול ממש צעד־אחרי־צעד. ובקטעים ה'מפחידים'? AI עושה את זה בשבילך."
+    answer: "חד משמעית כן. הקורס בנוי לאנשים שלא באים מהעולם הזה. אין פה קוד, אין פה הגדרות מסובכות – הכול ממש צעד־אחרי־צעד. ובקטעים ה'מפחידים'? AI עושה את זה בשבילך.",
+    showPortfolioButton: false
   }, {
     question: "כמה זמן לוקח לבנות את האתר בסוף?",
-    answer: "בממוצע? שעתיים–שלוש. ראיתי אנשים עושים את זה אפילו יותר מהר. זה תלוי כמה אתה רוצה לשחק עם העיצוב… אבל התהליך עצמו קצר ממש."
+    answer: "בממוצע? שעתיים–שלוש. ראיתי אנשים עושים את זה אפילו יותר מהר. זה תלוי כמה אתה רוצה לשחק עם העיצוב… אבל התהליך עצמו קצר ממש.",
+    showPortfolioButton: false
   }, {
     question: "מאיה באמת כותבת את כל הטקסטים?",
-    answer: "כן. היא פשוט תשאל אותך כמה שאלות, תבין מי אתה ומה העסק שלך – ותוציא לך טקסטים שנראים כאילו קופירייטר מקצועי ישב עליהם."
+    answer: "כן. היא פשוט תשאל אותך כמה שאלות, תבין מי אתה ומה העסק שלך – ותוציא לך טקסטים שנראים כאילו קופירייטר מקצועי ישב עליהם.",
+    showPortfolioButton: false
   }, {
     question: "ומה אם אני לא יודע מי הקהל שלי או מה לכתוב עליו?",
-    answer: "בשביל זה מאיה קיימת. היא תעזור לך לחדד הכול. אתה רק צריך לענות בכנות. וזהו."
+    answer: "בשביל זה מאיה קיימת. היא תעזור לך לחדד הכול. אתה רק צריך לענות בכנות. וזהו.",
+    showPortfolioButton: false
   }, {
     question: "Lovable זה באמת מספיק טוב לבנות אתר מקצועי?",
-    answer: "כן. פשוט צריך לדעת 'לדבר איתו' נכון… וזה בדיוק מה שלומדים בקורס. כשתראה את האתרים שנבנו איתו – תבין."
+    answer: "כן. פשוט צריך לדעת 'לדבר איתו' נכון… וזה בדיוק מה שלומדים בקורס. כשתראה את האתרים שנבנו איתו – תבין.",
+    showPortfolioButton: true
   }, {
     question: "אוקיי… אבל זה באמת יביא לי יותר לקוחות?",
-    answer: "אם אתה בונה אתר שנראה טוב, כתוב טוב ויש לו מבנה נכון – התשובה היא כן. זה לא קסם, זה פשוט עובד כי זה גורם לאנשים לסמוך עליך יותר."
+    answer: "אם אתה בונה אתר שנראה טוב, כתוב טוב ויש לו מבנה נכון – התשובה היא כן. זה לא קסם, זה פשוט עובד כי זה גורם לאנשים לסמוך עליך יותר.",
+    showPortfolioButton: false
   }, {
     question: "אני יכול לעדכן דברים לבד אחרי הקורס?",
-    answer: "ברור. זה אחד היתרונות. אתה לא תלוי באף מעצב, לא משלם על כל שינוי קטן. רוצה לשנות תמונה? מחליף. רוצה לשנות טקסט? מדביק חדש. קל."
+    answer: "ברור. זה אחד היתרונות. אתה לא תלוי באף מעצב, לא משלם על כל שינוי קטן. רוצה לשנות תמונה? מחליף. רוצה לשנות טקסט? מדביק חדש. קל.",
+    showPortfolioButton: false
   }, {
     question: "כמה זמן יש לי גישה לקורס?",
-    answer: "גישה לכל החיים. ללא הגבלת זמן. תוכל לחזור לשיעורים אפילו עוד שנה."
+    answer: "גישה לכל החיים. ללא הגבלת זמן. תוכל לחזור לשיעורים אפילו עוד שנה.",
+    showPortfolioButton: false
   }, {
     question: "ואם אני נתקע?",
-    answer: "תמיד אפשר לפנות אליי בוואטספ לכל שאלה או תהייה, אני זמין תמיד."
+    answer: "תמיד אפשר לפנות אליי בוואטספ לכל שאלה או תהייה, אני זמין תמיד.",
+    showPortfolioButton: false
   }, {
     question: "אני יכול לבנות יותר מאתר אחד עם השיטה?",
-    answer: "ברור. אחרי שאתה לומד את התהליך – אתה יכול לשכפל אותו שוב ושוב ולבנות כמה אתרים שתרצה."
+    answer: "ברור. אחרי שאתה לומד את התהליך – אתה יכול לשכפל אותו שוב ושוב ולבנות כמה אתרים שתרצה.",
+    showPortfolioButton: false
   }];
   return <section className="py-24 px-6 md:px-12">{/* Removed bg-background to show shader */}
       <div className="container max-w-3xl mx-auto px-[5px]">
@@ -44,7 +57,14 @@ const FAQ = () => {
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-right text-base md:text-lg text-muted-foreground font-light leading-relaxed pt-4">
-                  {faq.answer}
+                  <p>{faq.answer}</p>
+                  {faq.showPortfolioButton && (
+                    <Link to="/portfolio" className="inline-block mt-4">
+                      <GradientButton className="text-sm md:text-base px-4 py-2">
+                        צפייה באתרים שבניתי בעזרת SiteMaster AI
+                      </GradientButton>
+                    </Link>
+                  )}
                 </AccordionContent>
               </AccordionItem>)}
           </Accordion>
