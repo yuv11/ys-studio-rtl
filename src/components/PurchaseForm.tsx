@@ -76,7 +76,10 @@ const PurchaseForm = () => {
   return (
     <div className="space-y-6">
       {/* Form Container */}
-      <form onSubmit={handleSubmit} className="bg-card/50 backdrop-blur border border-border/50 rounded-2xl p-6 md:p-8 space-y-5">
+      <form onSubmit={handleSubmit} className="relative bg-gradient-to-br from-primary/15 via-card/80 to-primary/10 backdrop-blur-xl border-2 border-primary/40 rounded-3xl p-8 md:p-10 space-y-6 shadow-[0_0_60px_rgba(var(--primary-rgb),0.25)] overflow-hidden">
+        {/* Glow effects */}
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/30 blur-3xl rounded-full pointer-events-none" />
+        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/20 blur-3xl rounded-full pointer-events-none" />
         {/* Name Input */}
         <div className="space-y-2">
           <input
