@@ -7,6 +7,7 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Spotlight, GridBackground } from "@/components/ui/spotlight-new";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import { Home, User, Briefcase, Cog, MessageSquare, DollarSign, HelpCircle, Mail } from "lucide-react";
@@ -70,6 +71,8 @@ const Index = () => {
         </section>
         <Footer />
       </div>
+      
+      <WhatsAppButton />
     </main>;
 };
 export default Index;
