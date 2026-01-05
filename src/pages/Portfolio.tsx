@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { GradientButton } from "@/components/ui/gradient-button";
@@ -9,6 +9,17 @@ import project3 from "@/assets/project-3.png";
 import project4 from "@/assets/project-4.png";
 import project5 from "@/assets/project-5.png";
 const PortfolioPage = () => {
+  const navigate = useNavigate();
+
+  const handleCTAClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById('final-price-section');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
   const portfolioItems = [{
     id: "project-1",
     title: "טיפול נשיות באיזון חיים",
@@ -129,11 +140,12 @@ const PortfolioPage = () => {
       {/* Sticky CTA Button */}
       <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-background via-background/95 to-transparent">
         <div className="max-w-md mx-auto">
-          <Link to="/#final-price-section">
-            <GradientButton className="w-full py-4 text-lg font-bold">
-              ​ראיתי מספיק, אני רוצה גישה לקורס        
-            </GradientButton>
-          </Link>
+          <GradientButton 
+            className="w-full py-4 text-lg font-bold"
+            onClick={handleCTAClick}
+          >
+            ​ראיתי מספיק, אני רוצה גישה לקורס        
+          </GradientButton>
         </div>
       </div>
     </div>;
