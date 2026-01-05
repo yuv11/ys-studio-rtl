@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { GradientButton } from "@/components/ui/gradient-button";
 import yuvalProfile from "@/assets/yuval-profile.png";
 
 const MeetYuval = () => {
@@ -44,6 +46,12 @@ const MeetYuval = () => {
                 <br />
                 ובטח שלא צריך לקחת יותר משעה-שעתיים.
               </p>
+              
+              <Link to="/portfolio" className="inline-block mt-4">
+                <GradientButton className="text-base md:text-lg px-6 py-3">
+                  צפייה באתרים שבניתי בעזרת SiteMaster AI
+                </GradientButton>
+              </Link>
             </div>
           </div>
           
