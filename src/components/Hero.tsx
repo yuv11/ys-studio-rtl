@@ -1173,7 +1173,7 @@ const Hero = () => {
 
               {/* Price */}
               <div className="text-center">
-                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">169 ₪ בלבד.</p>
+                <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">ב-169 ₪ בלבד.</p>
               </div>
 
               {/* Visual Comparisons */}
