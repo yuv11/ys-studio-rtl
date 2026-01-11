@@ -10,7 +10,7 @@ import websiteResult from "@/assets/website-result.png";
 import restaurantMeal from "@/assets/restaurant-meal.jpg";
 import logoGraphic from "@/assets/logo-graphic.jpg";
 import { toast } from "@/hooks/use-toast";
-import { DollarSign, Settings, RefreshCw, Target, Award } from "lucide-react";
+import { DollarSign, Settings, RefreshCw, Target, Award, Star } from "lucide-react";
 import PhoneCarousel from "@/components/PhoneCarousel";
 import PurchaseForm from "@/components/PurchaseForm";
 const Hero = () => {
@@ -175,10 +175,22 @@ const Hero = () => {
             </div>
             
             {/* CTA Button */}
-            <div className="flex justify-center mt-12">
-            <GradientButton onClick={handleClick} className="px-14">
+            <div className="flex flex-col items-center mt-12 space-y-6">
+              <GradientButton onClick={handleClick} className="px-14">
                 אני רוצה להיות בפנים!👇     
               </GradientButton>
+              
+              {/* Gold Stars Badge */}
+              <div className="flex flex-col items-center gap-3 px-8 py-5 bg-gradient-to-r from-amber-500/20 via-yellow-500/30 to-amber-500/20 border-2 border-amber-400/60 rounded-xl backdrop-blur-sm shadow-lg">
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 text-amber-400 fill-amber-400" />
+                  ))}
+                </div>
+                <p className="text-lg md:text-xl font-bold text-amber-300 text-center">
+                  50+ אתרים כבר נבנו עם השיטה של Site Master AI
+                </p>
+              </div>
             </div>
           </div>
           
