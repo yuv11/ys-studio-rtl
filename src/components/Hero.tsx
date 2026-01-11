@@ -1057,28 +1057,6 @@ const Hero = () => {
                 <p className="text-6xl md:text-7xl lg:text-8xl font-black text-primary">ב-169 ₪ בלבד.</p>
               </div>
 
-              {/* Visual Comparisons */}
-              <div className="max-w-3xl mx-auto space-y-16 pt-8">
-                {/* Restaurant Comparison */}
-                <div className="space-y-6">
-                  <p className="text-2xl md:text-3xl text-center text-foreground/90 font-medium">
-                    זה פחות מארוחה זוגית במסעדה.
-                  </p>
-                  <div className="rounded-2xl overflow-hidden shadow-2xl">
-                    <img src={restaurantMeal} alt="ארוחה במסעדה" className="w-full h-auto object-cover" />
-                  </div>
-                </div>
-
-                {/* Logo Comparison */}
-                <div className="space-y-6">
-                  <p className="text-2xl md:text-3xl text-center text-foreground/90 font-medium">
-                    פחות מהעלות של לוגו ממוצע.
-                  </p>
-                  <div className="rounded-2xl overflow-hidden shadow-2xl">
-                    <img src={logoGraphic} alt="עיצוב לוגו" className="w-full h-auto object-cover" />
-                  </div>
-                </div>
-              </div>
 
               {/* Motivational Block */}
               <div className="max-w-3xl mx-auto space-y-6 text-center pt-12">
