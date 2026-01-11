@@ -183,9 +183,7 @@ const Hero = () => {
               {/* Gold Stars Badge */}
               <div className="flex flex-col items-center gap-3 px-8 py-5 bg-gradient-to-r from-amber-500/20 via-yellow-500/30 to-amber-500/20 border-2 border-amber-400/60 rounded-xl backdrop-blur-sm shadow-lg">
                 <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 text-amber-400 fill-amber-400" />
-                  ))}
+                  {[...Array(5)].map((_, i) => <Star key={i} className="w-6 h-6 text-amber-400 fill-amber-400" />)}
                 </div>
                 <p className="text-lg md:text-xl font-bold text-amber-300 text-center">
                   50+ אתרים כבר נבנו עם השיטה של Site Master AI
@@ -811,7 +809,7 @@ const Hero = () => {
                 <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">
                   הידע כדי לבנות אתר ממיר בשעה עבודה       
                 </div>
-                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">יכולת לבנות אינסןף אתרים</div>
+                <div className="bg-primary/10 border border-primary/20 rounded-full px-6 py-3 text-lg text-foreground">יכולת לבנות אינסוף אתרים</div>
               </div>
               
               <p className="text-xl text-foreground/80">מבחינתי – <strong className="text-foreground">זה עשה את העבודה.</strong></p>
