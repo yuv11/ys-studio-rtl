@@ -141,14 +141,16 @@ const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
                 </motion.div>;
           })}
           </motion.div>
-          
-          {/* Navigation Dots - Always Visible */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 bg-black/50 backdrop-blur-md px-5 py-3 rounded-full border border-white/20 shadow-lg z-50"
-          >
+        </div>
+        
+        {/* Navigation Dots - Below the phones */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          className="flex justify-center mt-6"
+        >
+          <div className="flex gap-3 bg-black/50 backdrop-blur-md px-5 py-3 rounded-full border border-white/20 shadow-lg">
             {videos.map((_, index) => (
               <button 
                 key={index} 
@@ -160,8 +162,8 @@ const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
                 }`} 
               />
             ))}
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
 
       {/* Video Modal */}
