@@ -1166,7 +1166,9 @@ const Hero = () => {
             <div className="max-w-5xl mx-auto space-y-16">
               {/* Headline */}
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-foreground leading-tight">
-                והכול במחיר שאפילו לא מתקרב לשווי האמיתי:
+                סקיל אחד שיכול לחסוך לך אלפי שקלים כיזם
+                <br />
+                וללוות אותך שנים קדימה
               </h2>
 
               {/* Price */}
