@@ -1200,27 +1200,15 @@ const Hero = () => {
               </div>
 
               {/* Motivational Block */}
-              <div className="max-w-3xl mx-auto space-y-8 text-center pt-12">
-                <p className="text-3xl md:text-4xl font-bold text-foreground leading-relaxed">
-                  עכשיו זה עליך.
-                </p>
-                
+              <div className="max-w-3xl mx-auto space-y-6 text-center pt-12">
                 <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed">
-                  אתה יכול להמשיך עוד חודש, עוד חצי שנה, עוד שנה –<br />
-                  בלי אתר שאתה גאה בו (או בלי אתר בכלל).
+                  אתה יכול להמשיך עוד חודשים בלי אתר שאתה גאה בו -<br />
+                  או ללחוץ עכשיו,
                 </p>
 
-                <div className="space-y-4 text-xl md:text-2xl text-muted-foreground leading-relaxed pt-6">
-                  <p>או שאתה יכול ללחוץ על הכפתור,</p>
-                  <p>להצטרף ל־SiteMaster AI,</p>
-                  <p className="font-bold text-foreground">ולבנות אתר מקצועי שנראה 10,000 ₪ – כבר השבוע.</p>
-                </div>
-
-                <div className="relative pt-8">
-                  <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
-                  <p className="relative text-2xl md:text-3xl font-black text-foreground">
-                    זו הזדמנות שאין סיבה לפספס.
-                  </p>
+                <div className="space-y-2 text-xl md:text-2xl text-foreground leading-relaxed">
+                  <p>להצטרף ל־SiteMaster AI</p>
+                  <p className="font-bold">ולבנות אתר מקצועי שנראה 10,000 ₪ - כבר השבוע.</p>
                 </div>
               </div>
 
