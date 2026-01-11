@@ -9,8 +9,13 @@ import courseMockup from "@/assets/course-mockup.png";
 import websiteResult from "@/assets/website-result.png";
 import restaurantMeal from "@/assets/restaurant-meal.jpg";
 import logoGraphic from "@/assets/logo-graphic.jpg";
+import testimonialScreenshot1 from "@/assets/testimonial-screenshot-1.png";
+import testimonialScreenshot2 from "@/assets/testimonial-screenshot-2.png";
+import testimonialScreenshot3 from "@/assets/testimonial-screenshot-3.png";
+import testimonialScreenshot4 from "@/assets/testimonial-screenshot-4.png";
+import testimonialScreenshot5 from "@/assets/testimonial-screenshot-5.png";
 import { toast } from "@/hooks/use-toast";
-import { DollarSign, Settings, RefreshCw, Target, Award, Star } from "lucide-react";
+import { DollarSign, Settings, RefreshCw, Target, Award, Star, Play } from "lucide-react";
 import PhoneCarousel from "@/components/PhoneCarousel";
 import PurchaseForm from "@/components/PurchaseForm";
 const Hero = () => {
@@ -958,7 +963,84 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Emotional Reinforcement Section */}
+          {/* Students & Clients Testimonials Section */}
+          <div dir="rtl" className="py-24 px-4">
+            <div className="max-w-6xl mx-auto space-y-12">
+              {/* Section Title */}
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+                  לקוחות ותלמידים מספרים
+                </h2>
+                <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+                  הנה מה שתלמידים ולקוחות אומרים על הקורס והשיטה
+                </p>
+              </div>
+
+              {/* WhatsApp Screenshots Grid */}
+              <div className="space-y-6">
+                <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground/90">
+                  💬 הודעות מתלמידי הקורס
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+                  {[
+                    testimonialScreenshot1,
+                    testimonialScreenshot2,
+                    testimonialScreenshot3,
+                    testimonialScreenshot4,
+                    testimonialScreenshot5
+                  ].map((screenshot, index) => (
+                    <div
+                      key={index}
+                      className="relative group overflow-hidden rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm hover:scale-105 hover:shadow-gradient-glow transition-all duration-300"
+                    >
+                      <img
+                        src={screenshot}
+                        alt={`ביקורת תלמיד ${index + 1}`}
+                        className="w-full h-auto object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Video Testimonials */}
+              <div className="space-y-6 pt-8">
+                <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground/90">
+                  🎥 סרטוני המלצה מלקוחות
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+                  {/* Video 1 */}
+                  <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm shadow-lg hover:shadow-gradient-glow transition-all duration-300">
+                    <div className="aspect-[9/16] w-full">
+                      <iframe
+                        src="https://iframe.mediadelivery.net/embed/572361/bb2bd6b5-dd0c-40bc-8021-6c365e444b10?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+                        loading="lazy"
+                        className="w-full h-full border-0"
+                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+
+                  {/* Video 2 */}
+                  <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm shadow-lg hover:shadow-gradient-glow transition-all duration-300">
+                    <div className="aspect-[9/16] w-full">
+                      <iframe
+                        src="https://iframe.mediadelivery.net/embed/572361/a33f4992-9eb7-4622-bef9-d4cb1ae6d834?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
+                        loading="lazy"
+                        className="w-full h-full border-0"
+                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+                        allowFullScreen
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <div dir="rtl" className="py-32 px-6">
             <div className="max-w-5xl mx-auto space-y-16">
               {/* Main Headline */}
