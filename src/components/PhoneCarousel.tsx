@@ -28,10 +28,13 @@ const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
   const [modalVideoUrl, setModalVideoUrl] = useState("");
   const containerRef = useRef<HTMLDivElement>(null);
   const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
-    const threshold = 50;
-    if (info.offset.x > threshold && activeIndex > 0) {
+    const threshold = 30; // Lower threshold for easier swiping on mobile
+    const velocity = info.velocity.x;
+    
+    // Use velocity for more natural swipe feel
+    if ((info.offset.x > threshold || velocity > 200) && activeIndex > 0) {
       setActiveIndex(activeIndex - 1);
-    } else if (info.offset.x < -threshold && activeIndex < videos.length - 1) {
+    } else if ((info.offset.x < -threshold || velocity < -200) && activeIndex < videos.length - 1) {
       setActiveIndex(activeIndex + 1);
     }
   };
@@ -88,10 +91,10 @@ const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
           <motion.div drag="x" dragConstraints={{
           left: 0,
           right: 0
-        }} dragElastic={0.2} onDragEnd={handleDragEnd} className="relative w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing py-px">
+        }} dragElastic={0.3} onDragEnd={handleDragEnd} className="relative w-full h-full flex items-center justify-center cursor-grab active:cursor-grabbing py-px touch-pan-y">
             {videos.map((video, index) => {
             const style = getPhoneStyle(index);
-            return <motion.div key={video.id} className="absolute" initial={false} animate={{
+            return <motion.div key={video.id} className="absolute pointer-events-auto" initial={false} animate={{
               x: style.x,
               scale: style.scale,
               zIndex: style.zIndex,
