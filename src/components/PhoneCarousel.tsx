@@ -142,10 +142,25 @@ const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
           })}
           </motion.div>
           
-          {/* Navigation Dots */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
-            {videos.map((_, index) => <button key={index} onClick={() => setActiveIndex(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-primary w-8 shadow-[0_0_10px_rgba(var(--primary-rgb),0.5)]" : "bg-white/50 hover:bg-white/70"}`} />)}
-          </div>
+          {/* Navigation Dots - Always Visible */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 bg-black/50 backdrop-blur-md px-5 py-3 rounded-full border border-white/20 shadow-lg z-50"
+          >
+            {videos.map((_, index) => (
+              <button 
+                key={index} 
+                onClick={() => setActiveIndex(index)} 
+                className={`h-3 rounded-full transition-all duration-300 ${
+                  index === activeIndex 
+                    ? "bg-primary w-8 shadow-[0_0_12px_rgba(var(--primary-rgb),0.6)]" 
+                    : "bg-white/60 w-3 hover:bg-white/90"
+                }`} 
+              />
+            ))}
+          </motion.div>
         </div>
       </div>
 
