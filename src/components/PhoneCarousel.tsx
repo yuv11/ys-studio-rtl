@@ -143,8 +143,8 @@ const PhoneCarousel = ({ className }: PhoneCarouselProps) => {
           </motion.div>
           
           {/* Navigation Dots */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-            {videos.map((_, index) => <button key={index} onClick={() => setActiveIndex(index)} className={`w-2 h-2 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-primary w-6" : "bg-muted-foreground/30 hover:bg-muted-foreground/50"}`} />)}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full">
+            {videos.map((_, index) => <button key={index} onClick={() => setActiveIndex(index)} className={`w-3 h-3 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-primary w-8 shadow-[0_0_10px_rgba(var(--primary-rgb),0.5)]" : "bg-white/50 hover:bg-white/70"}`} />)}
           </div>
         </div>
       </div>
