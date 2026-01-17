@@ -1004,39 +1004,6 @@ const Hero = () => {
                 </div>
               </div>
 
-              {/* Video Testimonials */}
-              <div className="space-y-6 pt-8">
-                <h3 className="text-xl md:text-2xl font-semibold text-center text-foreground/90">
-                  🎥 סרטוני המלצה מלקוחות
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
-                  {/* Video 1 */}
-                  <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm shadow-lg hover:shadow-gradient-glow transition-all duration-300">
-                    <div className="aspect-[9/16] w-full">
-                      <iframe
-                        src="https://iframe.mediadelivery.net/embed/572361/bb2bd6b5-dd0c-40bc-8021-6c365e444b10?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
-                        loading="lazy"
-                        className="w-full h-full border-0"
-                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-                        allowFullScreen
-                      />
-                    </div>
-                  </div>
-
-                  {/* Video 2 */}
-                  <div className="relative overflow-hidden rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm shadow-lg hover:shadow-gradient-glow transition-all duration-300">
-                    <div className="aspect-[9/16] w-full">
-                      <iframe
-                        src="https://iframe.mediadelivery.net/embed/572361/a33f4992-9eb7-4622-bef9-d4cb1ae6d834?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
-                        loading="lazy"
-                        className="w-full h-full border-0"
-                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
-                        allowFullScreen
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
